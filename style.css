@@ -1,0 +1,164 @@
+:root{
+    --primary-color: rgba(160, 16, 26, 1);
+    --primary-color-light: rgba(160, 16, 26, 0.85);
+    --secondary-color: rgba(217, 217, 217, 1);
+}
+
+.navbar-logo-botao{
+    display: flex;
+    gap:4rem;
+}
+
+.btn-padrao{
+    padding-inline: 1.625rem;
+    padding-block: 1rem;
+    background-color: var(--primary-color);
+    text-decoration: none;
+    color: white;
+    border-radius: 3.125rem;
+}
+
+body{
+    font-family: 'Open Sans';
+}
+
+body h2{
+    font-weight: 700;
+}
+
+body h3{
+    font-weight: 600;
+}
+
+body p{
+    font-weight: 400;
+}
+
+
+/* ----------------------------- + 10 ANOS */
+#info-empresa{
+    background-color: var(--primary-color);
+    color: white;
+    padding-block: 1.5rem;
+    padding-bottom: 0;
+}
+
+.info-empresa{
+    gap: 1.5rem;
+}
+
+#info-empresa .container-fluid{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.conheca-mais {    
+    background-color: var(--primary-color-light);
+    display: flex; 
+    flex-direction: row; 
+    align-items:center; 
+    justify-content: center; 
+    gap: 0.25rem;
+    padding-block: 1rem;
+}
+
+.conheca-mais a{
+    text-decoration: none;
+    color: white;
+}
+
+.conheca-mais svg{
+    /* no celular o icone fica meio pra baixo */
+    /* margin-bottom: 0.2rem; */
+    fill: white;
+}
+
+
+/* ----------------------------- CONHEÇA - PRODUTOS */
+#conheca img{
+    width: 22.5rem;
+    height: 11.563rem;
+}
+
+#conheca .conheca-content-title{
+    /* font-weight: 600; */
+    font-size: 14px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+    color: var(--primary-color);
+    stroke: var(--primary-color);
+}
+
+#conheca .conheca-content{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    background-color: var(--secondary-color);
+}
+
+/* ----------------------------- SOBRE NOS */
+
+#sobre{
+    padding: 1rem;
+}
+
+
+#sobre h2{
+    color: var(--primary-color);
+}
+
+
+#sobre img{
+    width: 9.25rem;
+    height: 8.5rem;
+}
+
+#sobre .btn-saiba-mais{
+    padding-block: 1rem;
+}
+
+/* ----------------------------- CONTATO */
+#contato{
+    padding-block: 1rem;
+    padding-inline: 1.5rem;
+    background-color: var(--primary-color);
+    color: white;
+}
+
+#contato .contato-content{
+    margin-top: 1rem;
+}
+
+#contato h3, #contato h2, #contato p{
+    margin-bottom: 0.125rem;
+}
+
+#contato h2{
+    font-size: 16px;
+}
+
+#contato h3{
+    font-size: 12px;
+}
+
+#contato p{
+    font-size: 10px;
+}
+
+
+
+
+ /* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {  }
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {  }
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {  }
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {  }

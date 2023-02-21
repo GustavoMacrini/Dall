@@ -1,0 +1,32 @@
+:root{
+    --primary-color: #A0101A
+}
+
+/* --------------- NAVBAR */
+.navbar-logo-botao{
+    display: flex;
+    gap:4rem;
+}
+
+
+/* ---------------- PRODUTOS */
+#produto .produto-content{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    background-color: var(--primary-color);
+    color: white;
+    stroke: white;
+
+}
+
+#produto .produto-content-title{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+}
+
+#produto img{
+    height: 100%; width: 100%;
+}

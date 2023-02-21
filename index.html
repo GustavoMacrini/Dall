@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TecnoPlast - Home</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<body>
+
+    <!-- existem 12 colunas ao total, col-11 fala q quero usar so 11 dando um espaçamento -->
+    <!-- m-auto é igual o margin auto -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light col-12 m-auto position-fixed" style="z-index: 999">
+        
+        <div class="container col-11 m-auto">
+
+            <div class="navbar-logo-botao">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- LOGO -->
+                <a class="navbar-brand m-lg-1" href="#">
+                    <img src="imagens/logo.svg" alt="">
+                </a>  
+            </div>
+               
+           
+           <!-- colocar dentro dessa div oq vai pra dentro do botão quando diminuir o tamanho -->
+           <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+             <!-- fica alinhado pra esquerda -->
+             <ul class="navbar-nav mr-auto">
+                <li class="nav-link">
+                    <a href="#" class="nav-link" >Home</span></a>
+                </li>
+
+                <li class="nav-link">
+                    <a href="/Embalagens.html" class="nav-link">Embalagens</span></a>
+                </li>
+
+                <li class="nav-link">
+                    <a href="" class="nav-link">Empacotamento</span></a>
+                </li>
+
+                <li class="nav-link">
+                    <a href="" class="nav-link">Sobre</span></a>
+                </li>
+
+                <li class="nav-link">
+                    <a href="" class="nav-link">Contato</span></a>
+                </li>
+
+                <li class="nav-link">
+                    <a href="" class="nav-link">Privacidade</span></a>
+                </li>
+
+            </ul>
+           </div>
+        </div>
+    </nav>
+      
+    <!-- Carrossel -->
+    <!-- o padding-top é pra navbar não tapar parte da imagem -->
+    <div id="carouselExample" class="carousel carousel slide" style="padding-top: 3.5rem">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="10000">
+                <img src="imagens/buteco.png" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h2>Imagem1</h2>
+                </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+                <img src="imagens/buteco.png" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h2>Imagem2</h2>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="imagens/buteco.png" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h2>Imagem3</h2>
+                </div>
+            </div>
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <!-- +10 anos mercado etc -->
+    <section id="info-empresa">
+        <div class="container-fluid">
+            <div class="row m-auto info-empresa" >
+                <div class="col-md-3 m-auto">
+                    <h2>+10 Anos no mercado</h2>
+                </div>        
+                <div class="col-md-3 m-auto">
+                    <h2>+100 Clientes</h2>
+                </div>
+                <div class="col-md-3 m-auto">
+                    <h2>+15 Produtos</h2>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="conheca-mais">
+        <a href="#">
+            conheça mais
+            <svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M7.73205 9C6.96225 10.3333 5.03775 10.3333 4.26795 9L0.803846 3C0.0340461 1.66667 0.996297 0 2.5359 0L9.4641 0C11.0037 0 11.966 1.66667 11.1962 3L7.73205 9Z" />
+            </svg>
+        </a>   
+    </div>
+
+
+    <!-- CONHECA - EMBALAGENS LAMINADAS -->
+    <section id="conheca">
+        <div>
+            <img src="/imagens/embalagens.svg" alt="">
+        </div>
+
+        <div class="conheca-content">
+            <div class="conheca-content-title">
+                <h2>Embalagens Laminadas</h2>
+                <svg width="11" height="18" viewBox="0 0 11 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <line x1="0.646447" y1="17.5629" x2="9.13173" y2="9.07761" stroke=""/>
+                    <line x1="1.35355" y1="0.646447" x2="9.83883" y2="9.13173" stroke=""/>
+                </svg>    
+            </div>
+            <div class="conheca-content-desc">
+                <p>
+                    Os materiais usados nas embalagem laminadas oferecem uma barreira que protege os itens armazenados contra agressões externas como a luz, calor e umidade.
+                </p>
+            </div>
+        </div>            
+    </section>
+
+    <!-- CONHECA - SISTEMA DE EMPACOTAMENTO -->
+    <section id="conheca">
+        <div>
+            <img src="/imagens/empacotamento.svg" alt="" >
+        </div>
+
+        <div class="conheca-content">
+            <div class="conheca-content-title">
+                <h2>Sistema de Empacotamento</h2>
+                <svg width="11" height="18" viewBox="0 0 11 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <line x1="0.646447" y1="17.5629" x2="9.13173" y2="9.07761" stroke=""/>
+                    <line x1="1.35355" y1="0.646447" x2="9.83883" y2="9.13173" stroke=""/>
+                </svg>    
+            </div>
+            <div class="conheca-content-desc">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, architecto nostrum exercitationem, quae, officia nesciunt illum beatae laborum accusamus explicabo est nobis odit! Officia sapiente ullam harum id, ipsam blanditiis?
+                </p>
+            </div>
+        </div>                    
+    </section>
+
+    <!-- SOBRE
+    <section class="sobre">
+        <div class="col-12 m-auto">
+            <h2>Sobre nós</h2>
+            <img src="imagens/sobresvg.svg" class="card-img-top" alt="">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium id esse, velit corporis rem sint amet obcaecati voluptatem tenetur modi, illum sit enim consequatur reprehenderit dicta iure, fuga unde aperiam!
+            </p>
+    
+            <div class="text-center">
+                <a href="#" class="btn btn-primary ">Go somewhere</a>
+            </div>            
+        </div>
+    </section> -->
+
+    <section id="sobre">                
+        <div class="sobre-title">
+            <h2>Sobre nós</h2>
+        </div>
+        
+        <div class="text-center">
+            <img src="imagens/sobresvg.svg"  alt="">
+        </div>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium id esse, velit corporis rem sint amet obcaecati voluptatem tenetur modi, illum sit enim consequatur reprehenderit dicta iure, fuga unde aperiam!
+        </p>     
+        <div class="text-center btn-saiba-mais">
+            <a href="" class="btn-padrao">Saiba Mais</a>
+        </div>
+    </section>
+
+    <section id="contato">
+        <div class="contato-title">
+            <h2>Contate-nos</h2>
+        </div>
+
+        <div class="contato-content">
+            <h3>Leandro Pinheiro</h3>
+            <p>(11) 97110-6373</p>
+            <p>leandro@tecnoplastembalagens.com.br</p>
+        </div>
+
+        <div class="contato-content">
+            <h3>Danilo Vieira</h3>
+            <p>(11) 97607-0191</p>
+            <p>danilo@tecnoplastembalagens.com.br</p>
+        </div>
+
+    </section>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+
+
+
+    <!-- ZAP flutuante -->
+    <div class="fixed-bottom mb-2" style="z-index: 999">
+        <div class="text-end " style="margin-right: 0.5rem;">
+            <a href="https://api.whatsapp.com/send?phone=5511999999999" target="_blank">
+                <i class="fa-brands fa-whatsapp" style="font-size: 80px; color: green;"></i>
+            </a>
+        </div>
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</body>
+</html>
