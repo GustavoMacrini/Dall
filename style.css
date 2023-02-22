@@ -145,9 +145,72 @@ body p{
 }
 
 #contato p{
-    font-size: 10px;
+    font-size: 12px;
 }
 
+/* ----------------------------- REDES SOCIAIS*/
+#redes{
+    padding-block: 1rem;
+}
+
+#redes .logo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+#redes .logo img{
+    width: 7.625rem;
+    height: 1.625rem;
+}
+
+#redes .redes-icones{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+/* ----------------------------- LINKS - TELAS*/
+#links-telas{
+    background-color: var(--primary-color);
+    padding-block: 1rem;
+}
+
+#links-telas .links-telas-content{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+#links-telas .link-telas-row1{
+    margin-bottom: 1.5rem;
+}
+
+#links-telas a{
+    font-size: 12px;
+    text-decoration: none;
+    color: white;
+}
+
+/* ----------------------------- FOOTER*/
+.footer{
+    background-color: var(--primary-color-light);
+    color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer p{
+    margin-block: 0.5rem;
+}
 
 
 
