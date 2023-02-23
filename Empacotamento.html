@@ -4,21 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TecnoPlast - Home</title>
-    <link rel="stylesheet" href="style.css">
+    <title>TecnoPlast - Embalagens</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="styleEmpacotamento.css">
 </head>
 <body>
-
-    <!-- existem 12 colunas ao total, col-11 fala q quero usar so 11 dando um espaçamento -->
-    <!-- m-auto é igual o margin auto -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light col-12 m-auto position-fixed" style="z-index: 999">
         
         <div class="container col-11 m-auto">
 
+            
             <div class="navbar-logo-botao">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -36,7 +32,7 @@
              <!-- fica alinhado pra esquerda -->
              <ul class="navbar-nav mr-auto">
                 <li class="nav-link">
-                    <a href="#" class="nav-link" >Home</span></a>
+                    <a href="index.html" class="nav-link" >Home</span></a>
                 </li>
 
                 <li class="nav-link">
@@ -63,137 +59,201 @@
            </div>
         </div>
     </nav>
-      
-    <!-- Carrossel -->
-    <!-- o padding-top é pra navbar não tapar parte da imagem -->
+
+
     <div id="carouselExample" class="carousel carousel slide" style="padding-top: 3.5rem">
-        <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <div class="carousel-inner carousel-multi-item">
+
+            <!-- conjunto de 3 -->
+            <div class="carousel-item active" >
+                
+                <div class="carrossel-wrapper">
+
+                    <div class="w-33">
+                        <div class="card-embalagem">
+                            <img src="imagens/embalagens/Almofada.svg" alt="">
+                            <p>Almofada</p>
+                        </div>
+                    </div>
+
+                    <div class="w-33">
+                        <div class="card-embalagem">
+                            <img src="imagens/embalagens/Almofada.svg" alt="">
+                            <p>Almofada</p>
+                        </div>
+                    </div>
+                
+                    <div class="w-33">
+                        <div class="card-embalagem">
+                            <img src="imagens/embalagens/Almofada.svg" alt="">
+                            <p>Almofada</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- conjunto de 3 -->
+            <div class="carousel-item" >
+                
+                <div class="carrossel-wrapper">
+
+                    <div class="w-33">
+                        <div class="card-embalagem">
+                            <img src="imagens/embalagens/Almofada.svg" alt="">
+                            <p>Almofada</p>
+                        </div>
+                    </div>
+
+                    <div class="w-33">
+                        <div class="card-embalagem">
+                            <img src="imagens/embalagens/Almofada.svg" alt="">
+                            <p>Almofada</p>
+                        </div>
+                    </div>
+                
+                    <div class="w-33">
+                        <div class="card-embalagem">
+                            <img src="imagens/embalagens/Almofada.svg" alt="">
+                            <p>Almofada</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
         </div>
 
-        <div class="carousel-inner">
-            <div class="carousel-item active" data-bs-interval="10000">
-                <img src="imagens/buteco.png" class="d-block w-100" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                    <h2>Imagem1</h2>
-                </div>
-            </div>
-            <div class="carousel-item" data-bs-interval="2000">
-                <img src="imagens/buteco.png" class="d-block w-100" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                    <h2>Imagem2</h2>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <img src="imagens/buteco.png" class="d-block w-100" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                    <h2>Imagem3</h2>
-                </div>
-            </div>
-        </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
 
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
     </div>
+    
 
-    <!-- +10 anos mercado etc -->
-    <section id="info-empresa">
-        <div class="container-fluid">
-            <div class="row m-auto info-empresa" >
-                <div class="col-md-3 m-auto">
-                    <h2>+10 Anos no mercado</h2>
-                </div>        
-                <div class="col-md-3 m-auto">
-                    <h2>+100 Clientes</h2>
-                </div>
-                <div class="col-md-3 m-auto">
-                    <h2>+15 Produtos</h2>
-                </div>
-            </div>
+
+    <!-- DESCRIÇÃO MAQUINAS -->
+    <section id="desc-embalagem">
+        <div class="desc-embalagem-content">
+            <p>
+                Conheças as nossas máquinas e sistemas de empacotamento!
+            </p>
         </div>
     </section>
-    <div class="conheca-mais">
-        <a href="#">
-            conheça mais
-            <svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M7.73205 9C6.96225 10.3333 5.03775 10.3333 4.26795 9L0.803846 3C0.0340461 1.66667 0.996297 0 2.5359 0L9.4641 0C11.0037 0 11.966 1.66667 11.1962 3L7.73205 9Z" />
-            </svg>
-        </a>   
-    </div>
 
-
-    <!-- CONHECA - EMBALAGENS LAMINADAS -->
-    <section id="conheca">
-        <div>
-            <img src="imagens/embalagens.svg" alt="">
+    <!-- FS POUCH -->
+    <section id="produto">
+        <div class="produto-img">
+            <img src="imagens/empacotamento/Fs-Pouch.svg" alt="" >
         </div>
 
-        <div class="conheca-content">
-            <div class="conheca-content-title">
-                <h2>Embalagens Laminadas</h2>
-                <svg width="11" height="18" viewBox="0 0 11 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <line x1="0.646447" y1="17.5629" x2="9.13173" y2="9.07761" stroke=""/>
-                    <line x1="1.35355" y1="0.646447" x2="9.83883" y2="9.13173" stroke=""/>
-                </svg>    
+        <div class="produto-content">
+            <div class="produto-content-title">
+                <h2>FS POUCH</h2>   
             </div>
-            <div class="conheca-content-desc">
+            <div class="produto-content-desc">
                 <p>
-                    Os materiais usados nas embalagem laminadas oferecem uma barreira que protege os itens armazenados contra agressões externas como a luz, calor e umidade.
+                    Formato para deitar a embalagem, geralmente entregue em bobina para aplicação em máquinas verticais automáticas.
                 </p>
             </div>
         </div>            
     </section>
 
-    <!-- CONHECA - SISTEMA DE EMPACOTAMENTO -->
-    <section id="conheca">
-        <div>
-            <img src="imagens/empacotamento.svg" alt="" >
+    <!-- FFS POUCH -->
+    <section id="produto">
+        <div class="produto-img">
+            <img src="imagens/empacotamento/Ffs-Pouch.svg" alt="" >
         </div>
 
-        <div class="conheca-content">
-            <div class="conheca-content-title">
-                <h2>Sistema de Empacotamento</h2>
-                <svg width="11" height="18" viewBox="0 0 11 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <line x1="0.646447" y1="17.5629" x2="9.13173" y2="9.07761" stroke=""/>
-                    <line x1="1.35355" y1="0.646447" x2="9.83883" y2="9.13173" stroke=""/>
-                </svg>    
+        <div class="produto-content">
+            <div class="produto-content-title">
+                <h2>FFS POUCH</h2>   
             </div>
-            <div class="conheca-content-desc">
+            <div class="produto-content-desc">
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, architecto nostrum exercitationem, quae, officia nesciunt illum beatae laborum accusamus explicabo est nobis odit! Officia sapiente ullam harum id, ipsam blanditiis?
+                    Esta é a embalagem Pouch mais moderna atualmente no mundo. Alta performance na gôndola, mantém o produto em pé e expõe a sua marca com excelência.
                 </p>
             </div>
-        </div>                    
+        </div>            
     </section>
 
-    <!-- SOBRE -->
-    <section id="sobre">                
-        <div class="sobre-title">
-            <h2>Sobre nós</h2>
+    <!-- FLOW PACK VERTICAL -->
+    <section id="produto">
+        <div class="produto-img">
+            <img src="imagens/empacotamento/Flow-Pack-Vertical.svg" alt="" >
         </div>
-        
-        <div class="text-center">
-            <img src="imagens/sobresvg.svg"  alt="">
-        </div>
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium id esse, velit corporis rem sint amet obcaecati voluptatem tenetur modi, illum sit enim consequatur reprehenderit dicta iure, fuga unde aperiam!
-        </p>     
-        <div class="text-center btn-saiba-mais">
-            <a href="" class="btn-padrao">Saiba Mais</a>
-        </div>
+
+        <div class="produto-content">
+            <div class="produto-content-title">
+                <h2>FLOW PACK VERTICAL</h2>   
+            </div>
+            <div class="produto-content-desc">
+                <p>
+                    Temos um formato padrão para líquidos.                
+                </p>
+            </div>
+        </div>            
     </section>
 
+    <!-- FS POUCH + VÁCUO -->
+    <section id="produto">
+        <div class="produto-img">
+            <img src="imagens/empacotamento/Fs-Pouch-Vacuo.svg" alt="" >
+        </div>
 
-    <!-- CONTATO -->
+        <div class="produto-content">
+            <div class="produto-content-title">
+                <h2>FS POUCH + VÁCUO</h2>   
+            </div>
+            <div class="produto-content-desc">
+                <p>
+                    Os filmes laminados são fornecidos em bobinas para linhas automáticas que formam, envasam e selam a embalagem.               
+                </p>
+            </div>
+        </div>            
+    </section>
+
+    <!-- DOSADORES -->
+    <section id="produto">
+        <div class="produto-img">
+            <img src="imagens/empacotamento/Dosadores.svg" alt="" >
+        </div>
+
+        <div class="produto-content">
+            <div class="produto-content-title">
+                <h2>DOSADORES</h2>   
+            </div>
+            <div class="produto-content-desc">
+                <p>
+                    Embalagem estruturada para apresentação na gondola, com maior área de exposição da marca. Comumente comercializada em indústrias de Café e Mercearia.             
+                </p>
+            </div>
+        </div>            
+    </section>
+    
+    <!-- ENCAIXOTAMENTO -->
+    <section id="produto">
+        <div class="produto-img">
+            <img src="imagens/empacotamento/Encaixotamento.svg" alt="" >
+        </div>
+
+        <div class="produto-content">
+            <div class="produto-content-title">
+                <h2>ENCAIXOTAMENTO</h2>   
+            </div>
+            <div class="produto-content-desc">
+                <p>
+                    Temos a versão convencional em alumínio e a opcional sendo transparente, com altíssima barreira. Chegando a incríveis 0,3g/m².24h.             
+                </p>
+            </div>
+        </div>            
+    </section>    
+
     <section id="contato">
         <div class="contato-title">
             <h2>CONTATE-NOS</h2>
@@ -213,10 +273,9 @@
 
     </section>
 
-    <!-- REDES -->
     <section id="redes">
         <div class="logo">
-            <img src="imagens/logo.svg" alt="">
+            <img src="/imagens/logo.svg" alt="">
         </div>
 
         <div class="redes-icones">
@@ -233,7 +292,6 @@
         </div>
     </section>
 
-    <!-- LINKS PARA AS TELAS -->
     <section id="links-telas">
         <div class="links-telas-content link-telas-row1">
             <a href="">início</a>
@@ -268,12 +326,14 @@
         </div>
     </section>
 
-    <!-- FOOTER -->
     <footer>
         <div class="footer">
             <p>©2023 Tecnoplast </p>
         </div>
     </footer>
+
+
+
 
 
     <!-- ZAP flutuante -->
@@ -284,8 +344,7 @@
             </a>
         </div>
     </div>
-
-
+    
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 </body>

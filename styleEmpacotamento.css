@@ -1,0 +1,203 @@
+:root{
+    --primary-color: rgba(160, 16, 26, 1);
+    --primary-color-light: rgba(160, 16, 26, 0.85);
+    --secondary-color: rgba(217, 217, 217, 1);
+}
+
+body p{
+    margin: 0;
+}
+
+body h2{
+    margin: 0;
+}
+
+/* --------------- NAVBAR */
+.navbar-logo-botao{
+    display: flex;
+    gap:4rem;
+}
+
+/* ---------------- CARROSSEL */
+#carouselExample{
+    background-color: var(--primary-color);
+}
+
+.carrossel-wrapper{
+    display: flex; 
+    flex-direction: row; 
+    gap: 1.5rem;
+}
+
+.card-embalagem{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.card-embalagem img{
+    width: 5rem;
+    height: 5rem;
+    filter: drop-shadow(0rem 0.25rem 0.25rem rgba(0, 0, 0, 0.25));
+    border-radius: 0.313rem;
+}
+
+.card-embalagem p{
+    font-size: 12px;
+    color: white;
+}
+
+/* ---------------- DESCRIÇÃO EMBALAGENS */
+
+#desc-embalagem{
+    background-color: var(--primary-color-light);
+    padding: 1.5rem;
+}
+
+#desc-embalagem .desc-embalagem-content p{
+    color: white;
+    font-size: 12px;
+}
+
+
+
+/* ---------------- PRODUTOS */
+#produto .produto-img{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#produto .produto-img img{
+    width: 11.563rem;
+    height: 11.563rem;
+}
+
+.produto-img{
+}
+
+#produto .produto-content{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    background-color: var(--secondary-color);
+    stroke: white;
+    gap: 0.5rem;
+}
+
+#produto .produto-content-title h2{
+    color: var(--primary-color);
+    font-size: 14px;
+    font-weight: 600;
+}
+
+#produto-content-desc{
+    color: black;
+    font-size: 12px;
+}
+
+#produto img{
+    height: 100%; width: 100%;
+}
+
+
+
+
+
+
+
+
+
+/* ----------------------------- CONTATO */
+#contato{
+    padding-block: 1rem;
+    padding-inline: 1.5rem;
+    background-color: var(--primary-color);
+    color: white;
+}
+
+#contato .contato-content{
+    margin-top: 1rem;
+}
+
+#contato h3, #contato h2, #contato p{
+    margin-bottom: 0.125rem;
+}
+
+#contato h2{
+    font-size: 16px;
+}
+
+#contato h3{
+    font-size: 12px;
+}
+
+#contato p{
+    font-size: 12px;
+}
+
+/* ----------------------------- REDES SOCIAIS*/
+#redes{
+    padding-block: 1rem;
+}
+
+#redes .logo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+#redes .logo img{
+    width: 7.625rem;
+    height: 1.625rem;
+}
+
+#redes .redes-icones{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+/* ----------------------------- LINKS - TELAS*/
+#links-telas{
+    background-color: var(--primary-color);
+    padding-block: 1rem;
+}
+
+#links-telas .links-telas-content{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+#links-telas .link-telas-row1{
+    margin-bottom: 1.5rem;
+}
+
+#links-telas a{
+    font-size: 12px;
+    text-decoration: none;
+    color: white;
+}
+
+/* ----------------------------- FOOTER*/
+.footer{
+    background-color: var(--primary-color-light);
+    color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer p{
+    margin-block: 0.5rem;
+}
