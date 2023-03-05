@@ -25,254 +25,410 @@
                 </button>
                 <!-- LOGO -->
                 <a class="navbar-brand m-lg-1" href="#">
-                    <img src="imagens/logo.svg" alt="">
+                    <img src="imagens/logos/logo.svg" alt="">
                 </a>  
+                
             </div>
                
-           
-           <!-- colocar dentro dessa div oq vai pra dentro do botão quando diminuir o tamanho -->
-           <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <!-- colocar dentro dessa div oq vai pra dentro do botão quando diminuir o tamanho -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
-             <!-- fica alinhado pra esquerda -->
-             <ul class="navbar-nav mr-auto">
-                <li class="nav-link">
-                    <a href="#" class="nav-link" >Home</span></a>
-                </li>
+                <!-- fica alinhado pra esquerda -->
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-link">
+                        <a href="#" class="nav-link" >INÍCIO</span></a>
+                    </li>
 
-                <li class="nav-link">
-                    <a href="Embalagens.html" class="nav-link">Embalagens</span></a>
-                </li>
+                    <li class="nav-link">
+                        <a href="Embalagens.html" class="nav-link">NOSSOS PRODUTOS</span></a>
+                    </li>
 
-                <li class="nav-link">
-                    <a href="Empacotamento.html" class="nav-link">Empacotamento</span></a>
-                </li>
+                    <li class="nav-link">
+                        <a href="Empacotamento.html" class="nav-link">SOBRE NÓS</span></a>
+                    </li>
 
-                <li class="nav-link">
-                    <a href="" class="nav-link">Sobre</span></a>
-                </li>
+                    <li class="nav-link">
+                        <a href="" class="nav-link">CONTATO</span></a>
+                    </li>
 
-                <li class="nav-link">
-                    <a href="" class="nav-link">Contato</span></a>
-                </li>
+                    <li class="nav-link">
+                        <a href="" class="nav-link">POLÍTICAS DE PRIVACIDADE</span></a>
+                    </li>
 
-                <li class="nav-link">
-                    <a href="" class="nav-link">Privacidade</span></a>
-                </li>
+                </ul>
+            </div>
 
-            </ul>
-           </div>
         </div>
     </nav>
       
     <!-- Carrossel -->
     <!-- o padding-top é pra navbar não tapar parte da imagem -->
-    <div id="carouselExample" class="carousel carousel slide" style="padding-top: 3.5rem">
-        <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    <section id="slider-inicial">
+        <div class="wrapper">
+            <div id="carouselExample" class="carousel carousel slide" style="padding-top: 3.5rem">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+    
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="10000">
+                    <img src="imagens/embalagens/embalagens-demo.svg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h2>Imagem1</h2>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                    <img src="imagens/embalagens/embalagens-demo.svg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h2>Imagem2</h2>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="imagens/embalagens/embalagens-demo.svg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h2>Imagem3</h2>
+                    </div>
+                </div>
+            </div>
+    
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+    
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
         </div>
+    </section>
 
-        <div class="carousel-inner">
-            <div class="carousel-item active" data-bs-interval="10000">
-                <img src="imagens/buteco.png" class="d-block w-100" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                    <h2>Imagem1</h2>
-                </div>
+    <!-- NOSSA HISTORIA -->
+    <section id="nossa-historia">
+        <div class="wrapper">
+
+            <div class="info-empresa-titulo">
+                <h2>
+                    A NOSSA HISTÓRIA
+                </h2>
             </div>
-            <div class="carousel-item" data-bs-interval="2000">
-                <img src="imagens/buteco.png" class="d-block w-100" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                    <h2>Imagem2</h2>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <img src="imagens/buteco.png" class="d-block w-100" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                    <h2>Imagem3</h2>
-                </div>
-            </div>
-        </div>
 
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
-    </div>
-
-    <!-- +10 anos mercado etc -->
-    <section id="info-empresa">
-        <div class="container-fluid">
             <div class="row m-auto info-empresa" >
-                <div class="col-md-3 m-auto">
-                    <h2>+10 Anos no mercado</h2>
-                </div>        
-                <div class="col-md-3 m-auto">
-                    <h2>+100 Clientes</h2>
+                <div class="col-md-3 m-auto info-empresa-content">
+                    <p>20XX</p>
+                    <img src="imagens/icones/dot.svg" alt="">
+                    <p>20xx nasce a dall, ainda com o nome de tecnoplast espandimos os nossos negócios.</p>
+                </div>     
+
+                <div class="col-md-3 m-auto info-empresa-content">
+                    <p>20XX</p>
+                    <img src="imagens/icones/dot.svg" alt="">
+                    <p>Lörem ipsum trekvartspudel jåhet. Beviheten diktig. Lyril dolyk varas eledes. Cykelbox </p>
                 </div>
-                <div class="col-md-3 m-auto">
-                    <h2>+15 Produtos</h2>
+                
+                <div class="col-md-3 m-auto info-empresa-content">
+                    <p>2023</p>
+                    <img src="imagens/icones/dot.svg" alt="">
+                    <p>Lörem ipsum trekvartspudel jåhet. Beviheten diktig. Lyril dolyk varas eledes. Cykelbox </p>                
                 </div>
+            </div>
+
+            <div class="conheca-mais">
+                <a href="#">
+                    conheça mais
+                    <svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7.73205 9C6.96225 10.3333 5.03775 10.3333 4.26795 9L0.803846 3C0.0340461 1.66667 0.996297 0 2.5359 0L9.4641 0C11.0037 0 11.966 1.66667 11.1962 3L7.73205 9Z" />
+                    </svg>
+                </a>   
+            </div>
             </div>
         </div>
     </section>
-    <div class="conheca-mais">
-        <a href="#">
-            conheça mais
-            <svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M7.73205 9C6.96225 10.3333 5.03775 10.3333 4.26795 9L0.803846 3C0.0340461 1.66667 0.996297 0 2.5359 0L9.4641 0C11.0037 0 11.966 1.66667 11.1962 3L7.73205 9Z" />
-            </svg>
-        </a>   
-    </div>
+
+    
 
 
-    <!-- CONHECA - EMBALAGENS LAMINADAS -->
-    <section id="conheca">
-        <div>
-            <img src="imagens/embalagens.svg" alt="">
-        </div>
+    <!-- PRODUTOS -->
+    <section id="produtos">
+        <div class="wrapper">
 
-        <div class="conheca-content">
-            <div class="conheca-content-title">
-                <h2>Embalagens Laminadas</h2>
-                <svg width="11" height="18" viewBox="0 0 11 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <line x1="0.646447" y1="17.5629" x2="9.13173" y2="9.07761" stroke=""/>
-                    <line x1="1.35355" y1="0.646447" x2="9.83883" y2="9.13173" stroke=""/>
-                </svg>    
+            <div class="produtos-title">
+                <h1>NOSSOS PRODUTOS</h1>
+            </div>            
+
+            <!-- EMPACOTAMENTO -->
+            <div class="produtos-subtitle">
+                <h2>
+                    SISTEMA DE EMPACOTAMENTO
+                </h2>
             </div>
-            <div class="conheca-content-desc">
+
+            <div class="container-produtos">
+                <button class="arrow-left control-empacota-slide" aria-label="Previous image" onclick= "mudarProduto('empacota-slide','left')">◀</button>
+                <div class="gallery-wrapper">
+                    <div class="gallery">
+    
+                        <div class="item empacota-slide current-item">
+                            <img src="imagens/embalagens/quadradas/Almofada.svg" alt="" >
+                            <p>ALMOFADA</p>
+                        </div>
+    
+                        <div class="item empacota-slide">
+                            <img src="imagens/embalagens/quadradas/Almofada.svg" alt="" >
+                            <p>ALMOFADA</p>
+                        </div>
+                        
+                        <div class="item empacota-slide">
+                            <img src="imagens/embalagens/quadradas/Almofada.svg" alt="" >
+                            <p>ALMOFADA</p>
+                        </div>
+    
+                        <div class="item empacota-slide">
+                            <img src="imagens/embalagens/quadradas/Almofada.svg" alt="" >
+                            <p>ALMOFADA</p>
+                        </div>
+    
+                        <div class="item empacota-slide">
+                            <img src="imagens/embalagens/quadradas/Almofada.svg" alt="" >
+                            <p>ALMOFADA</p>
+                        </div>
+    
+                        <div class="item empacota-slide">
+                            <img src="imagens/embalagens/quadradas/Almofada.svg" alt="" >
+                            <p>ALMOFADA</p>
+                        </div>
+    
+                        <div class="item empacota-slide">
+                            <img src="imagens/embalagens/quadradas/Almofada.svg" alt="" >
+                            <p>ALMOFADA</p>
+                        </div>
+    
+                        <div class="item empacota-slide">
+                            <img src="imagens/embalagens/quadradas/Almofada.svg" alt="" >
+                            <p>ALMOFADA</p>
+                        </div>
+    
+                        <div class="item empacota-slide">
+                            <img src="imagens/embalagens/quadradas/Almofada.svg" alt="" >
+                            <p>ALMOFADA</p>
+                        </div>
+    
+                        <div class="item empacota-slide">
+                            <img src="imagens/embalagens/quadradas/Almofada.svg" alt="" >
+                            <p>ALMOFADA</p>
+                        </div>
+                       
+                    </div>    
+                </div>
+    
+                <button class="arrow-right control-empacota-slide" aria-label="Next image" onclick= "mudarProduto('empacota-slide','right')">▶</button>                        
+            </div>
+    
+            <div class="produtos-text">
                 <p>
-                    Os materiais usados nas embalagem laminadas oferecem uma barreira que protege os itens armazenados contra agressões externas como a luz, calor e umidade.
+                    Lörem ipsum rekoring tar i antin. Premerad apograf. Depred viralgranska antina. 
+                    Biotaren sverka och retropi ponera.
                 </p>
             </div>
-        </div>            
-    </section>
 
-    <!-- CONHECA - SISTEMA DE EMPACOTAMENTO -->
-    <section id="conheca">
-        <div>
-            <img src="imagens/empacotamento.svg" alt="" >
-        </div>
-
-        <div class="conheca-content">
-            <div class="conheca-content-title">
-                <h2>Sistema de Empacotamento</h2>
-                <svg width="11" height="18" viewBox="0 0 11 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <line x1="0.646447" y1="17.5629" x2="9.13173" y2="9.07761" stroke=""/>
-                    <line x1="1.35355" y1="0.646447" x2="9.83883" y2="9.13173" stroke=""/>
-                </svg>    
+            <div class="btn-saiba-mais">
+                <a href="" class="btn-padrao">                
+                    Saiba Mais
+                    <img src="imagens/icones/right-arrow.svg" alt="">
+                </a>
             </div>
-            <div class="conheca-content-desc">
+
+
+            <!-- EMBALAGENS LAMINADAS -->
+            <div class="produtos-subtitle embalagem">
+                <h2>
+                    EMBALAGENS LAMINADAS
+                </h2>
+            </div>
+
+            <div class="container-produtos">
+                <button class="arrow-left control-embalagem-slide" aria-label="Previous image" onclick= "mudarProduto('embalagem-slide','left')">◀</button>
+                <div class="gallery-wrapper">
+                    <div class="gallery">
+    
+                        <div class="item embalagem-slide current-item">
+                            <img src="imagens/embalagens/quadradas/Almofada.svg" alt="" >
+                            <p>ALMOFADA</p>
+                        </div>
+    
+                        <div class="item embalagem-slide">
+                            <img src="imagens/embalagens/quadradas/Almofada.svg" alt="" >
+                            <p>ALMOFADA</p>
+                        </div>
+                        
+                        <div class="item embalagem-slide">
+                            <img src="imagens/embalagens/quadradas/Almofada.svg" alt="" >
+                            <p>ALMOFADA</p>
+                        </div>
+    
+                        <div class="item embalagem-slide">
+                            <img src="imagens/embalagens/quadradas/Almofada.svg" alt="" >
+                            <p>ALMOFADA</p>
+                        </div>
+    
+                        <div class="item embalagem-slide">
+                            <img src="imagens/embalagens/quadradas/Almofada.svg" alt="" >
+                            <p>ALMOFADA</p>
+                        </div>
+    
+                        <div class="item embalagem-slide">
+                            <img src="imagens/embalagens/quadradas/Almofada.svg" alt="" >
+                            <p>ALMOFADA</p>
+                        </div>
+    
+                        <div class="item embalagem-slide">
+                            <img src="imagens/embalagens/quadradas/Almofada.svg" alt="" >
+                            <p>ALMOFADA</p>
+                        </div>
+    
+                        <div class="item embalagem-slide">
+                            <img src="imagens/embalagens/quadradas/Almofada.svg" alt="" >
+                            <p>ALMOFADA</p>
+                        </div>
+    
+                        <div class="item embalagem-slide">
+                            <img src="imagens/embalagens/quadradas/Almofada.svg" alt="" >
+                            <p>ALMOFADA</p>
+                        </div>
+    
+                        <div class="item embalagem-slide">
+                            <img src="imagens/embalagens/quadradas/Almofada.svg" alt="" >
+                            <p>ALMOFADA</p>
+                        </div>
+                       
+                    </div>    
+                </div>
+    
+                <button class="arrow-right control-embalagem-slide" aria-label="Next image" onclick= "mudarProduto('embalagem-slide','right')">▶</button>                        
+            </div>
+    
+            <div class="produtos-text">
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, architecto nostrum exercitationem, quae, officia nesciunt illum beatae laborum accusamus explicabo est nobis odit! Officia sapiente ullam harum id, ipsam blanditiis?
+                    Lörem ipsum rekoring tar i antin. Premerad apograf. Depred viralgranska antina. 
+                    Biotaren sverka och retropi ponera.
                 </p>
             </div>
-        </div>                    
-    </section>
 
-    <!-- SOBRE -->
-    <section id="sobre">                
-        <div class="sobre-title">
-            <h2>Sobre nós</h2>
-        </div>
-        
-        <div class="text-center">
-            <img src="imagens/sobresvg.svg"  alt="">
-        </div>
-        <p>
-            A Tecnoplast traz soluções inteligentes e seguras em Sistemas Automáticos de Empacotamento simultaneamente com o desenvolvimento da embalagem.
-        </p>     
-        <div class="text-center btn-saiba-mais">
-            <a href="" class="btn-padrao">Saiba Mais</a>
+            <div class="btn-saiba-mais">
+                <a href="" class="btn-padrao">                
+                    Saiba Mais
+                    <img src="imagens/icones/right-arrow.svg" alt="">
+                </a>
+            </div>
+
+            
         </div>
     </section>
+      
 
+    
 
-    <!-- CONTATO -->
-    <section id="contato">
-        <div class="contato-title">
-            <h2>CONTATE-NOS</h2>
-        </div>
-
-        <div class="contato-content">
-            <h3>Leandro Pinheiro</h3>
-            <p>(11) 97110-6373</p>
-            <p>leandro@tecnoplastembalagens.com.br</p>
-        </div>
-
-        <div class="contato-content">
-            <h3>Danilo Vieira</h3>
-            <p>(11) 97607-0191</p>
-            <p>danilo@tecnoplastembalagens.com.br</p>
-        </div>
-
-    </section>
-
-    <!-- REDES -->
-    <section id="redes">
-        <div class="logo">
-            <img src="imagens/logo.svg" alt="">
-        </div>
-
-        <div class="redes-icones">
-            <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M9.4 25H16.6C22.6 25 25 22.6 25 16.6V9.4C25 3.4 22.6 1 16.6 1H9.4C3.4 1 1 3.4 1 9.4V16.6C1 22.6 3.4 25 9.4 25Z" stroke="#292D32" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M13 17.1999C15.3196 17.1999 17.2 15.3195 17.2 12.9999C17.2 10.6803 15.3196 8.79993 13 8.79993C10.6804 8.79993 8.79999 10.6803 8.79999 12.9999C8.79999 15.3195 10.6804 17.1999 13 17.1999Z" stroke="#292D32" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M19.7633 7H19.7773" stroke="#292D32" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-
-            <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M15.4 9.75993V13.2399H18.52C18.76 13.2399 18.88 13.4799 18.88 13.7199L18.4 15.9999C18.4 16.1199 18.16 16.2399 18.04 16.2399H15.4V24.9999H11.8V16.3599H9.75999C9.51999 16.3599 9.39999 16.2399 9.39999 15.9999V13.7199C9.39999 13.4799 9.51999 13.3599 9.75999 13.3599H11.8V9.39993C11.8 7.35993 13.36 5.79993 15.4 5.79993H18.64C18.88 5.79993 19 5.91993 19 6.15993V9.03993C19 9.27993 18.88 9.39993 18.64 9.39993H15.76C15.52 9.39993 15.4 9.51993 15.4 9.75993Z" stroke="#17191C" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"/>
-                <path d="M16.6 25H9.4C3.4 25 1 22.6 1 16.6V9.4C1 3.4 3.4 1 9.4 1H16.6C22.6 1 25 3.4 25 9.4V16.6C25 22.6 22.6 25 16.6 25Z" stroke="#17191C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>                                
+    <!-- QUEM SOMOS -->
+    <section id="quem-somos">                
+        <div class="wrapper">
+            <div class="quem-somos-title">
+                <h2>QUEM SOMOS?</h2>
+            </div>
+            
+            <div class="quem-somos-content">
+                <p>
+                    Lörem ipsum krobenade anande pore vinosade. Bent ament. Kekrol pogihet gyvaliga. Keting miligen men hemilingar. Donat vittneslitteratur i däpedade. Du kan vara drabbad. 
+                </p>  
+                <img src="imagens/logos/logo-redondo.svg" alt="logo-empresa">
+            </div>
+    
+               
+            <div class="btn-saiba-mais">
+                <a href="" class="btn-padrao">                
+                    Saiba Mais
+                    <img src="imagens/icones/right-arrow.svg" alt="">
+                </a>
+            </div>
         </div>
     </section>
 
-    <!-- LINKS PARA AS TELAS -->
-    <section id="links-telas">
-        <div class="links-telas-content link-telas-row1">
-            <a href="">início</a>
 
-            <svg width="4" height="4" viewBox="0 0 4 4" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <circle cx="2" cy="2" r="2" fill="white"/>
-            </svg>  
 
-            <a href="">Embalagens</a>
-
-            <svg width="4" height="4" viewBox="0 0 4 4" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <circle cx="2" cy="2" r="2" fill="white"/>
-            </svg>
-
-            <a href="">Sistemas de empacotamento</a>
-        </div>
-
-        <div class="links-telas-content">
-            <a href="">Contato</a>
-
-            <svg width="4" height="4" viewBox="0 0 4 4" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <circle cx="2" cy="2" r="2" fill="white"/>
-            </svg>  
-
-            <a href="">Sobre nós</a>
-
-            <svg width="4" height="4" viewBox="0 0 4 4" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <circle cx="2" cy="2" r="2" fill="white"/>
-            </svg>
-
-            <a href="">Políticas de privacidade</a>
-        </div>
-    </section>
+    
 
     <!-- FOOTER -->
-    <footer>
-        <div class="footer">
-            <p>©2023 Tecnoplast </p>
-        </div>
+    <footer>        
+        <!-- LINKS PARA AS TELAS -->
+        <section id="links-telas">
+            <div class="wrapper">
+                <div class="links-telas-content link-telas-row1">
+                    <a href="">início</a>
+        
+                    <svg width="4" height="4" viewBox="0 0 4 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="2" cy="2" r="2" fill="white"/>
+                    </svg>  
+        
+                    <a href="">Embalagens</a>
+        
+                    <svg width="4" height="4" viewBox="0 0 4 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="2" cy="2" r="2" fill="white"/>
+                    </svg>
+        
+                    <a href="">Sistemas de empacotamento</a>
+                </div>
+        
+                <div class="links-telas-content">
+                    <a href="">Contato</a>
+        
+                    <svg width="4" height="4" viewBox="0 0 4 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="2" cy="2" r="2" fill="white"/>
+                    </svg>  
+        
+                    <a href="">Sobre nós</a>
+        
+                    <svg width="4" height="4" viewBox="0 0 4 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="2" cy="2" r="2" fill="white"/>
+                    </svg>
+        
+                    <a href="">Políticas de privacidade</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- REDES -->
+        <section id="redes">
+            <div class="wrapper">
+                <div class="redes-content">
+                    
+                    <div class="logo">
+                        <img src="imagens/logos/logo.svg" alt="logo-empresa">
+                    </div>
+            
+                    <div class="redes-icones">
+                        <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9.4 25H16.6C22.6 25 25 22.6 25 16.6V9.4C25 3.4 22.6 1 16.6 1H9.4C3.4 1 1 3.4 1 9.4V16.6C1 22.6 3.4 25 9.4 25Z" stroke="#292D32" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M13 17.1999C15.3196 17.1999 17.2 15.3195 17.2 12.9999C17.2 10.6803 15.3196 8.79993 13 8.79993C10.6804 8.79993 8.79999 10.6803 8.79999 12.9999C8.79999 15.3195 10.6804 17.1999 13 17.1999Z" stroke="#292D32" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M19.7633 7H19.7773" stroke="#292D32" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+            
+                        <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M15.4 9.75993V13.2399H18.52C18.76 13.2399 18.88 13.4799 18.88 13.7199L18.4 15.9999C18.4 16.1199 18.16 16.2399 18.04 16.2399H15.4V24.9999H11.8V16.3599H9.75999C9.51999 16.3599 9.39999 16.2399 9.39999 15.9999V13.7199C9.39999 13.4799 9.51999 13.3599 9.75999 13.3599H11.8V9.39993C11.8 7.35993 13.36 5.79993 15.4 5.79993H18.64C18.88 5.79993 19 5.91993 19 6.15993V9.03993C19 9.27993 18.88 9.39993 18.64 9.39993H15.76C15.52 9.39993 15.4 9.51993 15.4 9.75993Z" stroke="#17191C" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"/>
+                            <path d="M16.6 25H9.4C3.4 25 1 22.6 1 16.6V9.4C1 3.4 3.4 1 9.4 1H16.6C22.6 1 25 3.4 25 9.4V16.6C25 22.6 22.6 25 16.6 25Z" stroke="#17191C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>                                
+                    </div>                
+                </div>
+                
+            </div>
+        </section>
+
+        <!-- COPYRIGHT -->
+        <section id="copyright">
+            <div class="copyright-dall">
+                <p>©2023 Dall </p>
+            </div>
+        </section>
     </footer>
 
 
@@ -285,8 +441,7 @@
         </div>
     </div>
 
-
-
+    <script src="script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 </body>
 </html>

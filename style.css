@@ -1,16 +1,23 @@
 :root{
     --primary-color: rgba(160, 16, 26, 1);
     --primary-color-light: rgba(160, 16, 26, 0.85);
-    --secondary-color: rgba(217, 217, 217, 1);
+    --primary-color-light-2: rgba(171, 47, 56, 1);
+    --primary-color-light-3: rgba(174, 65, 72, 1);    
+    --secondary-color: rgba(238, 238, 238, 1);
+}
+
+.wrapper{
+    padding: 1.5rem;
 }
 
 .navbar-logo-botao{
     display: flex;
-    gap:4rem;
+    gap:6rem;
 }
 
 .btn-padrao{
-    padding-inline: 1.625rem;
+    padding-left: 7.375rem;
+    padding-right: 2.344rem;
     padding-block: 0.5rem;
     background-color: var(--primary-color);
     text-decoration: none;
@@ -18,8 +25,24 @@
     border-radius: 3.125rem;
 }
 
+.btn-padrao img{
+    margin-left: 4.688rem;
+}
+
+.btn-saiba-mais{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 1.5rem;
+}
+
 body{
     font-family: 'Open Sans';
+}
+
+body h1{
+    font-weight: 700;
+    margin: 0;
 }
 
 body h2{
@@ -29,6 +52,7 @@ body h2{
 
 body h3{
     font-weight: 600;
+    margin: 0;
 }
 
 body p{
@@ -36,155 +60,231 @@ body p{
     margin: 0;
 }
 
-
-/* ----------------------------- + 10 ANOS */
-#info-empresa{
-    background-color: var(--primary-color);
-    color: white;
-    padding-block: 1.5rem;
+/* ----------------------------- SLIDER INICIAL */
+#slider-inicial{
+    background-color: var(--secondary-color);
 }
 
-.info-empresa{
-    gap: 1.5rem;
+#slider-inicial .wrapper{
+    padding-top: 0;
+    padding-inline: 0;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: white;
+    filter: drop-shadow(1px 1px 4px rgba(0, 0, 0, 0.25));
 }
 
-#info-empresa .container-fluid{
+
+
+/* ----------------------------- NOSSA HISTORIA */
+#nossa-historia{
+    margin-top: 0.5rem;
+    background-color: var(--secondary-color);
+    color: white;    
+}
+
+#nossa-historia .wrapper{
+    background-color: var(--primary-color-light-3);
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+#nossa-historia .container-fluid{
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
 }
 
-.conheca-mais {    
-    background-color: var(--primary-color-light);
+#nossa-historia .info-empresa-titulo h2{
+    font-size: 16px;
+    margin-bottom: 1.5rem;
+    margin-left: 1rem;
+}
+
+#nossa-historia .info-empresa{
+    gap: 2rem;
+}
+
+#nossa-historia .info-empresa p{
+    font-size: 12px;
+    
+}
+
+#nossa-historia .info-empresa .info-empresa-content{
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+
+#nossa-historia .conheca-mais {    
+    background-color: var(--primary-color-light-3);
     display: flex; 
     flex-direction: row; 
     align-items:center; 
     justify-content: center; 
     gap: 0.25rem;
-    padding-block: 1rem;
+    padding-top: 1.5rem;
 }
 
-.conheca-mais a{
+#nossa-historia .conheca-mais a{
     text-decoration: none;
     color: white;
 }
 
-.conheca-mais svg{
-    /* no celular o icone fica meio pra baixo */
-    /* margin-bottom: 0.2rem; */
+#nossa-historia .conheca-mais svg{
+
     fill: white;
 }
 
 
-/* ----------------------------- CONHEÇA - PRODUTOS */
-#conheca img{
-    width: 22.5rem;
-    height: 11.563rem;
+
+/* ----------------------------- PRODUTOS - SLIDE*/
+
+#produtos{
+    background-color: var(--primary-color-light-3);
 }
 
-#conheca .conheca-content-title{
-    /* font-weight: 600; */
-    font-size: 14px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 1rem;
-    color: var(--primary-color);
-    stroke: var(--primary-color);
-}
-
-#conheca .conheca-content{
-    display: flex;
-    flex-direction: column;
-    padding: 1rem;
+#produtos .wrapper{
     background-color: var(--secondary-color);
+    border-radius: 10px;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.25);
 }
 
-/* ----------------------------- SOBRE NOS */
-
-#sobre{
-    padding: 1rem;
-    padding-bottom: 0;
+#produtos .produtos-title h1{
+    font-size: 0;
 }
 
-
-#sobre h2{
-    color: var(--primary-color);
-}
-
-
-#sobre img{
-    width: 9.25rem;
-    height: 8.5rem;
-}
-
-#sobre p{
-    margin-top: 0.625rem;
-}
-
-#sobre .btn-saiba-mais{
-    /* padding-block: 1rem;*/
-    margin-block: 1.5rem;
-}
-
-/* ----------------------------- CONTATO */
-#contato{
-    padding-block: 1rem;
-    padding-inline: 1.5rem;
-    background-color: var(--primary-color);
-    color: white;
-}
-
-#contato .contato-content{
-    margin-top: 1rem;
-}
-
-#contato h3, #contato h2, #contato p{
-    margin-bottom: 0.125rem;
-}
-
-#contato h2{
+#produtos .produtos-subtitle h2{    
     font-size: 16px;
 }
 
-#contato h3{
-    font-size: 12px;
+#produtos .embalagem{
+    margin-top: 2.5rem;
 }
 
-#contato p{
-    font-size: 12px;
-}
-
-/* ----------------------------- REDES SOCIAIS*/
-#redes{
-    padding-block: 1rem;
-}
-
-#redes .logo{
+#produtos .container-produtos{
     display: flex;
     flex-direction: row;
-    align-items: center;
     justify-content: center;
-    margin-bottom: 1rem;
+    /* gap: 1rem; */
+    position: relative;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;    
+    margin: 0 auto;
+    margin-block: 1rem;    
 }
 
-#redes .logo img{
-    width: 7.625rem;
-    height: 1.625rem;
+#produtos .gallery-wrapper{    
+    overflow-x: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none;    
 }
 
-#redes .redes-icones{
+#produtos .gallery-wrapper::-webkit-scrollbar{
+    display: none;
+}
+
+#produtos .gallery{
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    gap: 1rem;
+}
+
+#produtos .arrow-left, #produtos .arrow-right{
+    z-index: 10;
+    top: 0;
+    left: 0;
+    right: auto;
+    bottom: 0;
+    font-size: 1.25rem;
+    /* line-height: 15.5rem; */
+    /* width: 2.5rem; */
+    text-align: center;
+    color: white;    
+    cursor: pointer;
+    border: none;
+    background: transparent;
+    opacity: 0.6;
+    transition: all 600ms ease-in-out;
+}
+
+#produtos .arrow-right{
+    left: auto;
+    right: 0;       
+}
+#produtos .arrow-left:hover, #produtos .arrow-right:hover{
+    opacity: 1;
+}
+
+#produtos .item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* width: 45%;
+    height: 45%; */
+    flex-shrink: 0;    
+}
+
+#produtos .item img{
+    width: 5rem;
+    height: 5rem;
+    border-radius: 0.313rem;
+}
+
+#produtos .item p{
+    font-size: 12px;
+    color: black;
+}
+
+#produtos .produtos-text{
+
+}
+
+
+/* ----------------------------- QUEM SOMOS */
+
+#quem-somos{
+    background-color: var(--primary-color-light-3);
+    color: white;
+}
+
+#quem-somos .wrapper{
+    padding-top: 3.125rem;
+    padding-bottom: 1.75rem;
+}
+
+#quem-somos h2{
+    font-size: 16px;
+}
+
+
+#quem-somos .quem-somos-content{
     display: flex;
     flex-direction: row;
+    gap: 0.688rem;
     align-items: center;
-    justify-content: center;
-    gap: 2rem;
 }
+
+#quem-somos .quem-somos-content p{
+    font-size: 12px;
+    margin-top: 0.625rem;
+}
+
+#quem-somos .quem-somos-content img{
+    width: 5rem;
+    height: 5rem;
+}
+
+
+
+
+/* ----------------------------- FOOTER -----------------------------------------/
 
 /* ----------------------------- LINKS - TELAS*/
 #links-telas{
-    background-color: var(--primary-color);
-    padding-block: 1rem;
+    background-color: var(--primary-color-light-2);    
 }
 
 #links-telas .links-telas-content{
@@ -205,9 +305,35 @@ body p{
     color: white;
 }
 
-/* ----------------------------- FOOTER*/
-.footer{
-    background-color: var(--primary-color-light);
+/* ----------------------------- REDES SOCIAIS*/
+#redes .wrapper{
+    padding-block: 0.813rem;
+}
+
+#redes .redes-content{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+}
+
+#redes .logo img{    
+    margin-right: 6rem;
+}
+
+#redes .redes-icones{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+}
+
+
+
+
+/* COPYRIGHT */
+#copyright .copyright-dall{
+    background-color: var(--primary-color-light-2);
     color: white;
     display: flex;
     flex-direction: row;
@@ -215,7 +341,7 @@ body p{
     justify-content: center;
 }
 
-.footer p{
+#copyright .copyright-dall p{
     margin-block: 0.5rem;
 }
 
