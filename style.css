@@ -10,11 +10,6 @@
     padding: 1.5rem;
 }
 
-.navbar-logo-botao{
-    display: flex;
-    gap:6rem;
-}
-
 .btn-padrao{
     padding-left: 7.375rem;
     padding-right: 2.344rem;
@@ -29,7 +24,7 @@
     margin-left: 4.688rem;
 }
 
-.btn-saiba-mais{
+.btn-saiba-mais a{
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -60,9 +55,17 @@ body p{
     margin: 0;
 }
 
+/* ----------------------------- NAVBAR */
+.navbar-logo-botao{
+    display: flex;
+    gap:6rem;
+}
+
+
 /* ----------------------------- SLIDER INICIAL */
 #slider-inicial{
     background-color: var(--secondary-color);
+    padding-top: 3.5rem
 }
 
 #slider-inicial .wrapper{
