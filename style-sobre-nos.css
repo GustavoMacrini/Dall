@@ -1,24 +1,7 @@
-:root{
-    --primary-color: rgba(160, 16, 26, 1);
-    --primary-color-light: rgba(160, 16, 26, 0.85);
-    --primary-color-light-2: rgba(171, 47, 56, 1);
-    --primary-color-light-3: rgba(174, 65, 72, 1);    
-    --secondary-color: rgba(238, 238, 238, 1);
-}
-
-.wrapper{
-    padding: 1.5rem;
-}
-
 .btn-padrao{
     padding-left: 2.938rem;
     padding-right: 5.125rem; 
-    padding-block: 0.5rem;
-    background-color: var(--primary-color);
-    text-decoration: none;
-    color: white;
-    border-radius: 3.125rem;
-}
+} 
 
 .btn-padrao img{
     margin-right: 1rem;
@@ -178,76 +161,4 @@ body p{
     font-weight: 300;
     opacity: 75%;
     color: white;
-}
-
-
-
-
-
-
-
-
-/* ----------------------------- FOOTER -----------------------------------------/
-
-/* ----------------------------- LINKS - TELAS*/
-#links-telas{
-    background-color: var(--primary-color-light-2);    
-}
-
-#links-telas .links-telas-content{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    gap: 0.5rem;
-}
-
-#links-telas .link-telas-row1{
-    margin-bottom: 1.5rem;
-}
-
-#links-telas a{
-    font-size: 12px;
-    text-decoration: none;
-    color: white;
-}
-
-/* ----------------------------- REDES SOCIAIS*/
-#redes .wrapper{
-    padding-block: 0.813rem;
-}
-
-#redes .redes-content{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: start;
-}
-
-#redes .logo img{    
-    margin-right: 6rem;
-}
-
-#redes .redes-icones{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 2rem;
-}
-
-
-
-
-/* COPYRIGHT */
-#copyright .copyright-dall{
-    background-color: var(--primary-color-light-2);
-    color: white;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-}
-
-#copyright .copyright-dall p{
-    margin-block: 0.5rem;
 }

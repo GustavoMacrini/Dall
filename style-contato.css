@@ -1,0 +1,105 @@
+.btn-padrao img{
+    margin-left: 3.75rem;
+}
+
+.btn-contato a{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1.5rem;
+}
+
+body{
+    font-family: 'Open Sans';
+}
+
+body h1{
+    font-weight: 700;
+    margin: 0;
+}
+
+body h2{
+    font-weight: 700;
+    margin: 0;
+}
+
+body h3{
+    font-weight: 600;
+    margin: 0;
+}
+
+body p{
+    font-weight: 400;
+    margin: 0;
+}
+
+/* ----------------------------- NAVBAR */
+.navbar-logo-botao{
+    display: flex;
+    gap:6rem;
+}
+
+/* ----------------------------- CONTATO */
+#contato{
+    padding-top: 4.5rem;
+}
+
+#contato .wrapper{
+    
+}
+
+#contato .contato-title h2{
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+#contato .contato-content p{
+    font-size: 12px;
+    font-weight: 400;
+    color: black;
+}
+
+/* ----------------------------- TIME */
+#time{
+    background-color: white;
+}
+
+#time .wrapper{
+    background-color: var(--primary-color-light-3);
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+#time .time{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+#time .time-membro{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+#time .foto img{
+    border-radius: 100%;
+    width: 5rem;
+    height: 5rem;
+}
+
+#time .nome h3{
+    font-size: 12px;
+    font-weight: 400;
+    color: white;
+}
+
+#time .cargo p, #time .email p, #time .telefone p{
+    font-size: 12px;
+    font-weight: 300;
+    opacity: 75%;
+    color: white;
+    margin-top: 0.25rem;
+}
