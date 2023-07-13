@@ -4,28 +4,36 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dall - Contato</title>
-    <link rel="stylesheet" href="template.css">
+    <title>Dall - Contato</title>    
     <link rel="stylesheet" href="style-contato.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Signika:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="template.css">
 </head>
 <body>
-    
+
     <nav class="navbar navbar-expand-lg navbar-light bg-light col-12 m-auto position-fixed" style="z-index: 999">
         
-        <div class="container col-11 m-auto">
-
+        <div class="container col-12 m-auto" id="navbar">
             <div class="navbar-logo-botao">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                <button onclick="navbarExpanded('open')" id="navbar-menu" class="navbar-toggler navbar-menu" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="toggler-icon top-bar">
+                        <img src="imagens/navbar/menu.svg" alt="">
+                    </span>
                 </button>
                 <!-- LOGO -->
                 <a class="navbar-brand m-lg-1" href="#">
                     <img src="imagens/logos/logo.svg" alt="">
-                </a>  
+                </a> 
+                
+                <button onclick="navbarExpanded('close')" id="navbar-close-menu" class="navbar-toggler navbar-close-menu" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="toggler-icon top-bar">
+                        <img src="imagens/navbar/close-menu.svg" alt="">
+                    </span>
+                </button>
                 
             </div>
                
@@ -35,23 +43,23 @@
                 <!-- fica alinhado pra esquerda -->
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-link">
-                        <a href="index.html" class="nav-link" >INÍCIO</span></a>
+                        <a onclick="navbarItemSelected('home')" id="navbar-home" href="index.html" class="nav-link">INÍCIO</span></a>
                     </li>
 
                     <li class="nav-link">
-                        <a href="" class="nav-link">NOSSOS PRODUTOS</span></a>
+                        <a onclick="navbarItemSelected('nossosProdutos')" id="navbar-nossosProdutos" href="" class="nav-link">NOSSOS PRODUTOS</span></a>
                     </li>
 
                     <li class="nav-link">
-                        <a href="sobre-nos.html" class="nav-link">SOBRE NÓS</span></a>
+                        <a onclick="navbarItemSelected('sobreNos')" id="navbar-sobreNos" href="sobre-nos.html" class="nav-link">SOBRE NÓS</span></a>
                     </li>
 
                     <li class="nav-link">
-                        <a href="contato.html" class="nav-link">CONTATO</span></a>
+                        <a onclick="navbarItemSelected('contato')" id="navbar-contato"  href="contato.html" class="nav-link">CONTATO</span></a>
                     </li>
 
                     <li class="nav-link">
-                        <a href="" class="nav-link">POLÍTICAS DE PRIVACIDADE</span></a>
+                        <a onclick="navbarItemSelected('politicaPrivacidade')" id="navbar-politicaPrivacidade"  href="" class="nav-link">POLÍTICAS DE PRIVACIDADE</span></a>
                     </li>
 
                 </ul>
@@ -159,7 +167,8 @@
         </div>
     </section>
 
-
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 </body>
 
 <!-- FOOTER -->

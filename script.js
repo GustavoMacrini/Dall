@@ -44,3 +44,40 @@ function mudarProduto(type, direction){
     
     items[currentItem].classList.add("current-item"); 
 };
+
+
+function navbarExpanded(option){
+    let selecionado = 'rgba(160, 16, 26, 1)';
+    let deselecionado = 'rgba(0, 0, 0, 1)';
+    let listaItens = ['home', 'nossosProdutos', 'sobreNos', 'contato', 'politicaPrivacidade']
+    let item;
+
+    // Home padrão selecionada
+    if(typeof sessionStorage.currentPage == 'undefined'){
+        sessionStorage.currentPage = 'home';
+    }
+    
+    // Mudar a cor dos itens do menu
+    listaItens.forEach(element => {
+        item = document.getElementById('navbar-' + element);
+        if(element != sessionStorage.currentPage){            
+            item.style.color = deselecionado;
+        }else{
+            item.style.color = selecionado;
+        }
+    });
+
+    // Altera icones do menu
+    if(option == 'open'){
+        document.getElementById('navbar-menu').style.visibility = 'hidden';
+        document.getElementById('navbar-close-menu').style.visibility = 'visible';
+    }
+    if(option == 'close'){
+        document.getElementById('navbar-close-menu').style.visibility = 'hidden';
+        document.getElementById('navbar-menu').style.visibility = 'visible';
+    }
+}
+
+function navbarItemSelected(item){
+    sessionStorage.currentPage = item;
+}
