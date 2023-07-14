@@ -9,6 +9,29 @@
     margin-top: 1.5rem;
 }
 
+.btn-detalhes{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-top: 2rem;
+    align-items: center;
+}
+
+.btn-detalhes a{
+    font-size: 12px;
+    font-weight: 400;
+    color: var(--primary-color);
+    /* padding-block: 0.5rem; */
+    padding-top: 0.625rem;
+    padding-bottom: 0.438rem;
+    padding-inline: 1rem;
+    text-decoration: none;
+    border: 1px solid var(--primary-color);
+    border-radius: 3rem;
+    align-items: center;
+    margin: 0;
+}
+
 /* ----------------------------- SLIDER INICIAL */
 #slider-inicial{
     background-color: var(--secondary-color);
@@ -35,67 +58,55 @@
     background-color: var(--primary-color-light-3);
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
-}
-
-#nossa-historia .container-fluid{
-    display: flex;
-    flex-direction: column;
+    background-image: url(./imagens/background/circle.svg);
+    background-position: relative;
+    background-position-x: 30px;
+    background-repeat:no-repeat;
 }
 
 #nossa-historia .info-empresa-titulo h2{
     font-size: 16px;
     margin-bottom: 1.5rem;
-    margin-left: 1rem;
+    font-weight: 700;
 }
 
 #nossa-historia .info-empresa{
-    gap: 2rem;
+    gap: 1.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+#nossa-historia .info-empresa h1{
+    font-size: 16px;
+    font-weight: 700;
+}
+
+#nossa-historia .info-empresa h2{
+    font-size: 14px;
+    font-weight: 400;
 }
 
 #nossa-historia .info-empresa p{
     font-size: 12px;
-    
+    font-weight: 300;
 }
 
 #nossa-historia .info-empresa .info-empresa-content{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     gap: 0.5rem;
-    align-items: center;
 }
-
-
-#nossa-historia .conheca-mais {    
-    background-color: var(--primary-color-light-3);
-    display: flex; 
-    flex-direction: row; 
-    align-items:center; 
-    justify-content: center; 
-    gap: 0.25rem;
-    padding-top: 1.5rem;
-}
-
-#nossa-historia .conheca-mais a{
-    text-decoration: none;
-    color: white;
-}
-
-#nossa-historia .conheca-mais svg{
-
-    fill: white;
-}
-
-
 
 /* ----------------------------- PRODUTOS - SLIDE*/
 
 #produtos{
-    background-color: var(--primary-color-light-3);
+    background-image: linear-gradient(to right, var(--primary-color-light-3), rgba(198, 109, 115, 1));
 }
 
 #produtos .wrapper{
     background-color: var(--secondary-color);
-    border-radius: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
     box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.25);
 }
 
@@ -105,6 +116,8 @@
 
 #produtos .produtos-subtitle h2{    
     font-size: 16px;
+    font-weight: 700;
+    color: rgba(0, 0, 0, 1)
 }
 
 #produtos .embalagem{
@@ -115,7 +128,6 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-    /* gap: 1rem; */
     position: relative;
     padding-left: 0.5rem;
     padding-right: 0.5rem;    
@@ -186,38 +198,43 @@
     color: black;
 }
 
-#produtos .produtos-text{
-
+#produtos .produtos-line h3{
+    width: 311px;
+    height: 0px;
+    stroke-width: 1px;
+    stroke: #CBCBCB;
 }
-
 
 /* ----------------------------- QUEM SOMOS */
 
 #quem-somos{
-    background-color: var(--primary-color-light-3);
-    color: white;
+    background-color: var(--secondary-color);
+    color: #1E1E1E;
 }
 
 #quem-somos .wrapper{
-    padding-top: 3.125rem;
+    /* padding-top: 3.125rem; */
     padding-bottom: 1.75rem;
+    background-color: #fff;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 
 #quem-somos h2{
     font-size: 16px;
+    font-weight: 700;
 }
 
-
-#quem-somos .quem-somos-content{
-    display: flex;
-    flex-direction: row;
-    gap: 0.688rem;
-    align-items: center;
+#quem-somos .quem-somos-logo img{
+    width: 132.367px;
+    height: 57px;
+    margin-block: 1rem;
 }
 
 #quem-somos .quem-somos-content p{
     font-size: 12px;
-    margin-top: 0.625rem;
+    font-weight: 400;
+    /* margin-top: 0.625rem; */
 }
 
 #quem-somos .quem-somos-content img{
