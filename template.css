@@ -5,6 +5,9 @@
     --primary-color-light-2: rgba(171, 47, 56, 1);
     --primary-color-light-3: rgba(174, 65, 72, 1);    
     --secondary-color: rgba(238, 238, 238, 1);
+    --dark-letter-primary:rgba(0, 0, 0, 1);
+    --dark-letter-secondary: rgba(0, 0, 0, 0.75);
+    --light-letter-primary: rgba(249, 245, 240, 1);
 }
 
 .wrapper{
@@ -96,7 +99,7 @@ body p{
 #links-telas a{
     font-size: 12px;
     text-decoration: none;
-    color: white;
+    color: var(--light-letter-primary);
 }
 
 /* ----------------------------- REDES SOCIAIS*/
@@ -113,7 +116,8 @@ body p{
 }
 
 #redes .logo img{    
-    /* margin-right: 6rem; */
+    width: 3.7rem;
+    height: 1.6rem;
 }
 
 #redes .redes-icones{
@@ -126,7 +130,7 @@ body p{
 /* COPYRIGHT */
 #copyright .copyright-dall{
     background-color: var(--primary-color-light-2);
-    color: white;
+    color: var(--light-letter-primary);
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -137,4 +141,20 @@ body p{
     font-size: 10px;
     font-weight: 400;
     margin-block: 0.5rem;
+}
+
+
+
+/* ---------------- RESPONSIVO */
+
+@media (min-width: 992px){
+    .wrapper{
+        width: max(80rem);   
+    }
+
+    /* ---------------- FOOTER */
+    #copyright .copyright-dall p{
+        font-size: 12px;
+    }
+
 }
