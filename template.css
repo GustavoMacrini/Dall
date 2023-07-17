@@ -148,8 +148,8 @@ body p{
     z-index: 999;
     width: 60px;
     height: 60px;
-    bottom: 40px;
-    right: 40px;
+    bottom: 10px;
+    right: 10px;
     background-color: #24d366;
     color: #fff;
     border-radius: 50px;
@@ -175,9 +175,9 @@ body p{
         font-size: 12px;
     }
 
-    /* .nav-link:hover{
-        color: var(--primary-color);
-        
-    } */
+    .whatsapp-link{
+        bottom: 40px;
+        right: 40px;
+    }
 
 }
