@@ -66,7 +66,7 @@ body p{
 }
 
 /* ----------------------------- BOTAO */
-.btn-padrao{
+/* .btn-padrao{
     padding-left: 7.375rem;
     padding-right: 2.344rem;
     padding-block: 0.5rem;
@@ -74,7 +74,7 @@ body p{
     text-decoration: none;
     color: white;
     border-radius: 3.125rem;
-}
+} */
 
 
 /* ----------------------------- FOOTER ----------------------------------------- */
@@ -143,7 +143,25 @@ body p{
     margin-block: 0.5rem;
 }
 
+.whatsapp-link{
+    position: fixed;
+    z-index: 999;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 40px;
+    background-color: #24d366;
+    color: #fff;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 1px 1px 2px #888;
+}
 
+
+.fa-whatsapp{
+    margin-top: 16px;
+}
 
 /* ---------------- RESPONSIVO */
 
@@ -156,5 +174,10 @@ body p{
     #copyright .copyright-dall p{
         font-size: 12px;
     }
+
+    /* .nav-link:hover{
+        color: var(--primary-color);
+        
+    } */
 
 }
