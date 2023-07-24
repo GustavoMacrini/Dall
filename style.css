@@ -1,35 +1,5 @@
-.btn-padrao img{
-    margin-left: 4.688rem;
-}
-
-.btn-saiba-mais a{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin-top: 1.5rem;
-}
-
 .btn-detalhes{
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
     margin-top: 2rem;
-    align-items: center;
-}
-
-.btn-detalhes a{
-    font-size: 12px;
-    font-weight: 400;
-    color: var(--primary-color);
-    /* padding-block: 0.5rem; */
-    padding-top: 0.625rem;
-    padding-bottom: 0.438rem;
-    padding-inline: 1rem;
-    text-decoration: none;
-    border: 1px solid var(--primary-color);
-    border-radius: 3rem;
-    align-items: center;
-    margin: 0;
 }
 
 /* ----------------------------- SLIDER INICIAL */
@@ -340,17 +310,22 @@
     #produtos .produtos-text{
         font-size: 24px;    
         font-weight: 400;
-        color: var(--dark-letter-secondary);
+        color: var(--dark-letter-secondary);                
     }
 
     /* slider */
+
+    #produtos .gallery-wrapper{
+        margin-inline: 5rem;
+    }
+
     #produtos .gallery{
         gap:3.5rem;
     }
 
     #produtos .item img{
         width: 11.25rem;
-        height: 11.25rem;
+        height: 11.25rem;    
     }
 
     #produtos .item p{

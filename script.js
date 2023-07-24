@@ -80,3 +80,9 @@ function navbarChangeItemColor(){
     item = document.getElementById('navbar-' + sessionStorage.currentPage);
     item.style.color = selecionado;
 }
+
+
+function produtosDetalhesShow(card){
+    // document.getElementById('group-card-maquina').classList.toggle('group-hidden');
+    document.querySelector('#group-card-' + card).classList.toggle('group-hidden');
+}

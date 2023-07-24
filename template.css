@@ -5,6 +5,7 @@
     --primary-color-light-2: rgba(171, 47, 56, 1);
     --primary-color-light-3: rgba(174, 65, 72, 1);    
     --secondary-color: rgba(238, 238, 238, 1);
+    --secondary-color-light: rgba(248, 248, 248, 1);
     --dark-letter-primary:rgba(0, 0, 0, 1);
     --dark-letter-secondary: rgba(0, 0, 0, 0.75);
     --light-letter-primary: rgba(249, 245, 240, 1);
@@ -40,6 +41,36 @@ body p{
     margin: 0;
 }
 
+/* ----------------------------- BOTOES */
+/* + DETALHES */
+.btn-detalhes{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.btn-detalhes a{
+    font-size: 12px;
+    font-weight: 400;
+    color: var(--primary-color);
+    padding-top: 0.625rem;
+    padding-bottom: 0.438rem;
+    padding-inline: 1rem;
+    text-decoration: none;
+    border: 1px solid var(--primary-color);
+    border-radius: 3rem;
+    align-items: center;
+    margin: 0;
+    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+:root .btn-detalhes a:hover{
+    background-color: var(--primary-color);
+    color: white;
+    cursor:pointer;
+}
+
 /* ----------------------------- NAVBAR */
 .navbar{
     border-bottom-left-radius: 0.3rem;
@@ -63,11 +94,6 @@ body p{
 .nav-link{
     font-weight: 700;
     font-size: 16px;
-}
-
-nav li a:hover{
-    /* background-color: blue; */
-    color: purple;
 }
 
 #navbar .container{
@@ -166,8 +192,25 @@ nav li a:hover{
 
 @media (min-width: 992px){
     .wrapper{
-        width: max(80rem);   
+        /* width: max(80rem);    */
+        width: max(96rem);
     }
+
+    /* ----------------------------- BOTOES */
+    /* + DETALHES */
+    /* .btn-detalhes{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+    } */
+
+    .btn-detalhes a{
+        font-size: 14px;
+        padding-inline: 4.25rem;
+        margin-right: 7rem;
+    }
+
 
     /* ---------------- FOOTER */
     #copyright .copyright-dall p{

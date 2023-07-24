@@ -1,0 +1,237 @@
+
+/* ----------------------------- VIDEO INICIAL */
+#video-inicial{
+    padding-top: 3.5rem;
+    background-color: white;
+    padding-bottom: 0.5rem;
+}
+
+#video-inicial .wrapper{
+    padding: 0;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: white;
+    filter: drop-shadow(1px 1px 4px rgba(0, 0, 0, 0.25));
+}
+
+#video-inicial .video-inicial img{
+    width: 100%;
+    height: 14.063rem;
+}
+
+/* ----------------------------- SISTEMA EMPACOTAMENTO */
+#empacotamento * {
+    border: none;
+    background-color: var(--secondary-color-light);
+}
+
+#empacotamento{
+    background-color: var(--secondary-color-light);
+}
+
+#empacotamento .wrapper{
+    padding-top: 1rem;
+}
+
+#empacotamento .titulo h1{
+    font-size: 16px;   
+    color: var(--dark-letter-primary); 
+}
+
+#empacotamento .subtitulo h2{
+    font-size: 12px;
+    font-weight: 400;
+    color: var(--dark-letter-primary);
+    margin-top: 0.5rem;
+}
+
+.group-card{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    overflow: hidden;
+    transition: height 0.5s ease;
+    height: 29.6rem;
+    padding-top: 1.5rem;    
+}
+
+.group-hidden{
+    height: 16rem;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+}
+
+.card img{
+    width: 144px;
+    height: 80px;
+    border-radius: 0px 10px;
+    box-shadow: 1px 1px 4px 0px rgba(0, 0, 0, 0.25);
+    margin-bottom: 0.25rem;
+}
+
+#empacotamento img{
+    background-color: white;
+}
+
+.card h2{
+    font-size: 12px;
+    color: var(--dark-letter-primary);
+    /* background-color: var(--secondary-color-light); */
+}
+
+.card p{
+    font-size: 12px;
+    color: var(--dark-letter-primary);
+    width: 144px;
+    /* background-color: var(--secondary-color-light); */
+}
+
+/* ----------------------------- SISTEMA EMPACOTAMENTO */
+#embalagens *{
+    border: none;
+    background-color: var(--secondary-color-light);
+}
+
+#embalagens{
+    background-color: var(--secondary-color-light);
+}
+
+#embalagens img{
+    background-color: white;
+}
+
+#embalagens .titulo h1{
+    font-size: 16px;
+    color: var(--dark-letter-primary);
+    margin-bottom: 0.5rem;
+}
+
+#embalagens .subtitulo p{
+    font-size: 12px;
+    color: var(--dark-letter-secondary);
+}
+
+#maquinas-detalhes .wrapper, #embalagens-detalhes .wrapper{
+    box-shadow: 0px -4px 50px 0px rgba(0, 0, 0, 0.25);
+}
+
+/* ----------------------------- CONTATO */
+
+#contato {
+    background-color: var(--primary-color-light-3);
+}
+
+#contato .titulo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#contato h1{
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+#contato .btn-contato{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1.75rem;
+}
+
+#contato .btn-contato a{
+    font-size: 12px;
+    font-weight: 400;
+    background-color: var(--primary-color);
+    color: white;
+    padding-top: 0.625rem;
+    padding-bottom: 0.438rem;
+    padding-inline: 1rem;
+    text-decoration: none;
+    border-radius: 3rem;
+    align-items: center;
+    margin: 0;
+    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+/* ----------------------------- RESPONSIVO */
+@media (min-width: 992px){
+
+    /* CARDS */
+    #empacotamento .titulo h1, #embalagens .titulo h1{
+        font-size: 40px;
+    }
+
+    #empacotamento .subtitulo h2, #embalagens .subtitulo h2{
+        font-size: 16px;
+    }
+
+    .card img{
+        width: 410px;
+        height: 244.17px;
+    }
+
+    .card h2{
+        font-size: 32px;
+    }
+
+    .card p{
+        font-size: 16px;
+        width: 410px;
+    }
+
+    .group-card{
+        height: 42rem;
+    }
+
+    .group-hidden{
+        height: 16rem;
+    }
+
+    /* VIDEO INICIAL */
+    #video-inicial .wrapper{
+        filter: none;
+    }
+    
+    #video-inicial .video-inicial img{
+        width: 1536px;
+        height: 487px;
+    }
+
+    /* EMPACOTAMENTO */
+    #maquinas-detalhes, #embalagens-detalhes{
+        box-shadow: 0px -4px 50px 0px rgba(0, 0, 0, 0.25);
+    }
+    
+    #maquinas-detalhes .wrapper, #embalagens-detalhes .wrapper{
+        box-shadow: none;
+    }
+
+    /* CONTATO */
+    #contato .wrapper{
+        padding-top: 5rem;
+        padding-bottom: 2.5rem;
+    }
+
+    #contato .titulo{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 0.5rem;
+    }
+
+    #contato .titulo h1{
+        font-size: 40px
+    }
+
+    #contato .btn-contato{
+        margin-top: 2.5rem;
+    }
+}
