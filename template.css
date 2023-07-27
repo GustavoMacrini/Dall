@@ -196,15 +196,6 @@ body p{
         width: max(96rem);
     }
 
-    /* ----------------------------- BOTOES */
-    /* + DETALHES */
-    /* .btn-detalhes{
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-end;
-        align-items: center;
-    } */
-
     .btn-detalhes a{
         font-size: 14px;
         padding-inline: 4.25rem;

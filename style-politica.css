@@ -1,0 +1,33 @@
+#politica-header{
+    padding-top: 3.5rem;    
+    color: var(--light-letter-primary);
+}
+
+#politica-header .wrapper{
+    background-color: var(--primary-color-light-3);
+    border-radius: 0px 0px 10px 10px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 0.5rem;
+}
+
+
+/* ---------------- RESPONSIVO */
+@media (min-width: 992px){
+    #politica-header{
+        background-color: var(--primary-color-light-3);
+    }
+    #politica-header .wrapper{
+        background-color: transparent;
+    }
+
+    #politica-header h1{
+        font-size: 40px;
+    }
+
+    #politica-header p{
+        font-size: 16px;
+    }
+}
