@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dall - Início</title>
-    <link rel="stylesheet" href="style-politica.css">
+    <link rel="stylesheet" href="../css/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     
@@ -13,26 +14,29 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Signika:wght@300;400;700&display=swap" rel="stylesheet">
     <!-- aquiii -->
-    <link rel="stylesheet" href="template.css">
+    <link rel="stylesheet" href="../css/template.css">
 </head>
 <body>
+
+    <!-- existem 12 colunas ao total, col-11 fala q quero usar so 11 dando um espaçamento -->
+    <!-- m-auto é igual o margin auto -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light col-12 m-auto position-fixed" style="z-index: 999">
         
         <div class="container col-12 m-auto" id="navbar">
             <div class="navbar-logo-botao">
                 <button onclick="navbarExpanded('open')" id="navbar-menu" class="navbar-toggler navbar-menu" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="toggler-icon top-bar">
-                        <img src="imagens/navbar/menu.svg" alt="">
+                        <img src="../imagens/navbar/menu.svg" alt="">
                     </span>
                 </button>
                 <!-- LOGO -->
                 <a class="navbar-brand m-lg-1" href="#">
-                    <img src="imagens/logos/logo.svg" alt="">
+                    <img src="../imagens/logos/logo.svg" alt="">
                 </a> 
                 
                 <button onclick="navbarExpanded('close')" id="navbar-close-menu" class="navbar-toggler navbar-close-menu" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="toggler-icon top-bar">
-                        <img src="imagens/navbar/close-menu.svg" alt="">
+                        <img src="../imagens/navbar/close-menu.svg" alt="">
                     </span>
                 </button>
                 
@@ -68,37 +72,302 @@
 
         </div>
     </nav>
-
-    <section id="politica-header">
+      
+    <!-- Carrossel -->
+    <!-- o padding-top é pra navbar não tapar parte da imagem -->
+    <section id="slider-inicial">
         <div class="wrapper">
-            <h1>POLÍTICA DE PRIVACIDAE</h1>
-            <p>Lörem ipsum gonera diarade, och trengar. Meganoska tirat medan sasuska ogisk </p>    
+            <div id="carouselExample" class="carousel carousel slide" >
+
+
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1" ></button>
+                <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+
+    
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="10000">
+                    <img src="../imagens/embalagens/embalagens-demo.svg" class="d-block w-100" alt="...">
+                    <!-- <div class="carousel-caption d-none d-md-block">
+                        <h2>Imagem1</h2>
+                    </div> -->
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                    <img src="../imagens/embalagens/embalagens-demo.svg" class="d-block w-100" alt="...">
+                    <!-- <div class="carousel-caption d-none d-md-block">
+                        <h2>Imagem2</h2>
+                    </div> -->
+                </div>
+                <div class="carousel-item">
+                    <img src="../imagens/embalagens/embalagens-demo.svg" class="d-block w-100" alt="...">
+                    <!-- <div class="carousel-caption d-none d-md-block">
+                        <h2>Imagem3</h2>
+                    </div> -->
+                </div>
+            </div>
+    
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+    
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+
+    <!-- NOSSA HISTORIA -->
+    <section id="nossa-historia">
+        <div class="wrapper">
+
+            <div class="info-empresa-titulo">
+                <h2>
+                    SAVINGS
+                </h2>
+            </div>
+
+            <div class="info-empresa" >
+                <div class="col-md-3 info-empresa-content">
+                    <h2>EM TESTE ABC</h2>
+                    <h1>+ DE XX ANOS NO MERCADO</h1>
+                    <p>TESTE SUBTITULO ABCD</p>
+                </div>     
+
+                <div class="col-md-3 info-empresa-content">
+                    <h2>EM TESTE ABC</h2>
+                    <h1>+ DE XX ANOS NO MERCADO</h1>
+                    <p>TESTE SUBTITULO ABCD</p>
+                </div>
+                
+                <div class="col-md-3 info-empresa-content">
+                    <h2>EM TESTE ABC</h2>
+                    <h1>+ DE XX ANOS NO MERCADO</h1>
+                    <p>TESTE SUBTITULO ABCD</p>               
+                </div>
+
+            </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- PRODUTOS -->
+    <section id="produtos">
+        <div class="wrapper">
+
+            <div class="produtos-title">
+                <h1>NOSSOS PRODUTOS</h1>
+            </div>            
+
+            <!-- EMPACOTAMENTO -->
+            <div class="produtos-subtitle">
+                <h2>
+                    SISTEMA DE EMPACOTAMENTO
+                </h2>
+            </div>
+
+            <div class="container-produtos">
+                <button class="arrow-left control-empacota-slide" aria-label="Previous image" onclick= "mudarProduto('empacota-slide','left')">◀</button>
+                <div class="gallery-wrapper">
+                    <div class="gallery">
+    
+                        <div class="item empacota-slide current-item">
+                            <img src="../imagens/embalagens/quadradas/Almofada.svg" alt="" >
+                            <p>ALMOFADA</p>
+                        </div>
+    
+                        <div class="item empacota-slide">
+                            <img src="../imagens/embalagens/quadradas/Almofada.svg" alt="" >
+                            <p>ALMOFADA</p>
+                        </div>
+                        
+                        <div class="item empacota-slide">
+                            <img src="../imagens/embalagens/quadradas/Almofada.svg" alt="" >
+                            <p>ALMOFADA</p>
+                        </div>
+    
+                        <div class="item empacota-slide">
+                            <img src="../imagens/embalagens/quadradas/Almofada.svg" alt="" >
+                            <p>ALMOFADA</p>
+                        </div>
+    
+                        <div class="item empacota-slide">
+                            <img src="../imagens/embalagens/quadradas/Almofada.svg" alt="" >
+                            <p>ALMOFADA</p>
+                        </div>
+    
+                        <div class="item empacota-slide">
+                            <img src="../imagens/embalagens/quadradas/Almofada.svg" alt="" >
+                            <p>ALMOFADA</p>
+                        </div>
+    
+                        <div class="item empacota-slide">
+                            <img src="../imagens/embalagens/quadradas/Almofada.svg" alt="" >
+                            <p>ALMOFADA</p>
+                        </div>
+    
+                        <div class="item empacota-slide">
+                            <img src="../imagens/embalagens/quadradas/Almofada.svg" alt="" >
+                            <p>ALMOFADA</p>
+                        </div>
+    
+                        <div class="item empacota-slide">
+                            <img src="../imagens/embalagens/quadradas/Almofada.svg" alt="" >
+                            <p>ALMOFADA</p>
+                        </div>
+    
+                        <div class="item empacota-slide">
+                            <img src="../imagens/embalagens/quadradas/Almofada.svg" alt="" >
+                            <p>ALMOFADA</p>
+                        </div>
+                       
+                    </div>    
+                </div>
+    
+                <button class="arrow-right control-empacota-slide" aria-label="Next image" onclick= "mudarProduto('empacota-slide','right')">▶</button>                        
+            </div>
+    
+            <div class="produtos-text">
+                <p>
+                    Lörem ipsum rekoring tar i antin. Premerad apograf. Depred viralgranska antina. 
+                    Biotaren sverka och retropi ponera.
+                </p>
+            </div>
+            
+            <div class="btn-detalhes">
+                <a href="">
+                    + DETALHES
+                </a>
+            </div>
+           
+            <div class="produtos-line">
+                <hr>
+            </div>
+            <!-- EMBALAGENS LAMINADAS -->
+            <div class="produtos-subtitle embalagem">
+                <h2>
+                    EMBALAGENS LAMINADAS
+                </h2>
+            </div>
+
+            <div class="container-produtos">
+                <button class="arrow-left control-embalagem-slide" aria-label="Previous image" onclick= "mudarProduto('embalagem-slide','left')">◀</button>
+                <div class="gallery-wrapper">
+                    <div class="gallery">
+    
+                        <div class="item embalagem-slide current-item">
+                            <img src="../imagens/embalagens/quadradas/Almofada.svg" alt="" >
+                            <p>ALMOFADA</p>
+                        </div>
+    
+                        <div class="item embalagem-slide">
+                            <img src="../imagens/embalagens/quadradas/Almofada.svg" alt="" >
+                            <p>ALMOFADA</p>
+                        </div>
+                        
+                        <div class="item embalagem-slide">
+                            <img src="../imagens/embalagens/quadradas/Almofada.svg" alt="" >
+                            <p>ALMOFADA</p>
+                        </div>
+    
+                        <div class="item embalagem-slide">
+                            <img src="../imagens/embalagens/quadradas/Almofada.svg" alt="" >
+                            <p>ALMOFADA</p>
+                        </div>
+    
+                        <div class="item embalagem-slide">
+                            <img src="../imagens/embalagens/quadradas/Almofada.svg" alt="" >
+                            <p>ALMOFADA</p>
+                        </div>
+    
+                        <div class="item embalagem-slide">
+                            <img src="../imagens/embalagens/quadradas/Almofada.svg" alt="" >
+                            <p>ALMOFADA</p>
+                        </div>
+    
+                        <div class="item embalagem-slide">
+                            <img src="../imagens/embalagens/quadradas/Almofada.svg" alt="" >
+                            <p>ALMOFADA</p>
+                        </div>
+    
+                        <div class="item embalagem-slide">
+                            <img src="../imagens/embalagens/quadradas/Almofada.svg" alt="" >
+                            <p>ALMOFADA</p>
+                        </div>
+    
+                        <div class="item embalagem-slide">
+                            <img src="../imagens/embalagens/quadradas/Almofada.svg" alt="" >
+                            <p>ALMOFADA</p>
+                        </div>
+    
+                        <div class="item embalagem-slide">
+                            <img src="../imagens/embalagens/quadradas/Almofada.svg" alt="" >
+                            <p>ALMOFADA</p>
+                        </div>
+                       
+                    </div>    
+                </div>
+    
+                <button class="arrow-right control-embalagem-slide" aria-label="Next image" onclick= "mudarProduto('embalagem-slide','right')">▶</button>                        
+            </div>
+    
+            <div class="produtos-text">
+                <p>
+                    Lörem ipsum rekoring tar i antin. Premerad apograf. Depred viralgranska antina. 
+                    Biotaren sverka och retropi ponera.
+                </p>
+            </div>
+
+            <div class="btn-detalhes">
+                <a href="">
+                    + DETALHES
+                </a>
+            </div>
+            
         </div>
     </section>
 
 
-    <section id="politica-content">
+    <!-- QUEM SOMOS -->
+    <section id="quem-somos">                
         <div class="wrapper">
-            <p>Política PrivacidadeA sua privacidade é importante para nós. É política do Dall respeitar a sua privacidade em relação a qualquer informação sua que possamos coletar no site Dall, e outros sites que possuímos e operamos.Solicitamos informações pessoais apenas quando realmente precisamos delas para lhe fornecer um serviço. Fazemo-lo por meios justos e legais, com o seu conhecimento e consentimento. Também informamos por que estamos coletando e como será usado.Apenas retemos as informações coletadas pelo 
-                Política PrivacidadeA sua privacidade é importante para nós. É política do Dall respeitar a sua privacidade em relação a qualquer informação sua que possamos coletar no site Dall, e outros sites que possuímos e operamos.Solicitamos informações pessoais apenas quando realmente precisamos delas para lhe fornecer um serviço. Fazemo-lo por meios justos e legais, com o seu conhecimento e consentimento. Também informamos por que estamos coletando e como será usado.Apenas retemos as informações coletada</p>     
+            <div class="quem-somos-title">
+                <h1>QUEM SOMOS?</h1>
+            </div>
+
+            <div class="quem-somos-logo">
+                <img src="../imagens/logos/logo.svg" alt="">
+            </div>
+            
+            <div class="quem-somos-content">
+                <p>
+                    Lörem ipsum krobenade anande pore vinosade. Bent ament. Kekrol pogihet gyvaliga. Keting miligen men hemilingar. Donat vittneslitteratur i däpedade. Du kan vara drabbad. 
+                </p>  
+            </div>
+    
+               
+            <div class="btn-detalhes">
+                <a href="">
+                    + DETALHES
+                </a>
+            </div>
         </div>
     </section>
 
+    <!-- ZAP flutuante -->
+    <a class="whatsapp-link" href="https://api.whatsapp.com/send?phone=5511999999999" target="_blank">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
 
-
-
-
-
-
-
-
-
-
-
-        
+    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
-    <script src="script.js"></script>
+    <script src="../js/script.js"></script>
 </body>
+
 
 <!-- FOOTER -->
 <footer>        
@@ -145,7 +414,7 @@
             <div class="redes-content">
                 
                 <div class="logo">
-                    <img src="imagens/logos/logo.svg" alt="logo-empresa">
+                    <img src="../imagens/logos/logo.svg" alt="logo-empresa">
                 </div>
         
                 <div class="redes-icones">
@@ -184,4 +453,6 @@
         </div>
     </section>
 </footer>
+
+
 </html>

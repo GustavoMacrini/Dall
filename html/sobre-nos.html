@@ -4,39 +4,38 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dall - Início</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Dall - Sobre Nós</title>    
+    <link rel="stylesheet" href="../css/style-sobre-nos.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    
+
     <!-- aquiii -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Signika:wght@300;400;700&display=swap" rel="stylesheet">
     <!-- aquiii -->
-    <link rel="stylesheet" href="template.css">
+
+    <link rel="stylesheet" href="../css/template.css">
 </head>
 <body>
-
-    <!-- existem 12 colunas ao total, col-11 fala q quero usar so 11 dando um espaçamento -->
-    <!-- m-auto é igual o margin auto -->
+    
     <nav class="navbar navbar-expand-lg navbar-light bg-light col-12 m-auto position-fixed" style="z-index: 999">
         
         <div class="container col-12 m-auto" id="navbar">
             <div class="navbar-logo-botao">
                 <button onclick="navbarExpanded('open')" id="navbar-menu" class="navbar-toggler navbar-menu" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="toggler-icon top-bar">
-                        <img src="imagens/navbar/menu.svg" alt="">
+                        <img src="../imagens/navbar/menu.svg" alt="">
                     </span>
                 </button>
                 <!-- LOGO -->
                 <a class="navbar-brand m-lg-1" href="#">
-                    <img src="imagens/logos/logo.svg" alt="">
+                    <img src="../imagens/logos/logo.svg" alt="">
                 </a> 
                 
                 <button onclick="navbarExpanded('close')" id="navbar-close-menu" class="navbar-toggler navbar-close-menu" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="toggler-icon top-bar">
-                        <img src="imagens/navbar/close-menu.svg" alt="">
+                        <img src="../imagens/navbar/close-menu.svg" alt="">
                     </span>
                 </button>
                 
@@ -64,7 +63,7 @@
                     </li>
 
                     <li class="nav-link">
-                        <a onclick="navbarItemSelected('politicaPrivacidade')" id="navbar-politicaPrivacidade"  href="politica.html" class="nav-link">POLÍTICAS DE PRIVACIDADE</span></a>
+                        <a onclick="navbarItemSelected('politicaPrivacidade')" id="navbar-politicaPrivacidade"  href="" class="nav-link">POLÍTICAS DE PRIVACIDADE</span></a>
                     </li>
 
                 </ul>
@@ -72,289 +71,114 @@
 
         </div>
     </nav>
-      
-    <!-- Carrossel -->
-    <!-- o padding-top é pra navbar não tapar parte da imagem -->
-    <section id="slider-inicial">
+
+    <section id="img-inicial">
         <div class="wrapper">
-            <div id="carouselExample" class="carousel carousel slide" >
-
-
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1" ></button>
-                <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <div class="img-inicial">
+                <img src="../imagens/embalagens/embalagens-demo.svg" alt="">
             </div>
-
-    
-            <div class="carousel-inner">
-                <div class="carousel-item active" data-bs-interval="10000">
-                    <img src="imagens/embalagens/embalagens-demo.svg" class="d-block w-100" alt="...">
-                    <!-- <div class="carousel-caption d-none d-md-block">
-                        <h2>Imagem1</h2>
-                    </div> -->
-                </div>
-                <div class="carousel-item" data-bs-interval="2000">
-                    <img src="imagens/embalagens/embalagens-demo.svg" class="d-block w-100" alt="...">
-                    <!-- <div class="carousel-caption d-none d-md-block">
-                        <h2>Imagem2</h2>
-                    </div> -->
-                </div>
-                <div class="carousel-item">
-                    <img src="imagens/embalagens/embalagens-demo.svg" class="d-block w-100" alt="...">
-                    <!-- <div class="carousel-caption d-none d-md-block">
-                        <h2>Imagem3</h2>
-                    </div> -->
-                </div>
-            </div>
-    
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-    
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
         </div>
     </section>
 
-    <!-- NOSSA HISTORIA -->
+
+    <section id="info-empresa">
+        <div class="wrapper">
+            <div class="info-empresa-content">
+                <h2>+ DE XX ANOS NO MERCADO</h2>
+                <h2>+ DE 100 CLIENTES</h2>
+                <h2>+ DE 15 PRODUTOS</h2>
+            </div>
+        </div>
+    </section>
+
     <section id="nossa-historia">
         <div class="wrapper">
-
-            <div class="info-empresa-titulo">
-                <h2>
-                    SAVINGS
-                </h2>
+            <div class="nossa-historia-title">
+                <h2>A NOSSA HISTÓRIA</h2>
             </div>
-
-            <div class="info-empresa" >
-                <div class="col-md-3 info-empresa-content">
-                    <h2>EM TESTE ABC</h2>
-                    <h1>+ DE XX ANOS NO MERCADO</h1>
-                    <p>TESTE SUBTITULO ABCD</p>
-                </div>     
-
-                <div class="col-md-3 info-empresa-content">
-                    <h2>EM TESTE ABC</h2>
-                    <h1>+ DE XX ANOS NO MERCADO</h1>
-                    <p>TESTE SUBTITULO ABCD</p>
-                </div>
-                
-                <div class="col-md-3 info-empresa-content">
-                    <h2>EM TESTE ABC</h2>
-                    <h1>+ DE XX ANOS NO MERCADO</h1>
-                    <p>TESTE SUBTITULO ABCD</p>               
-                </div>
-
-            </div>
-
-            </div>
-        </div>
-    </section>
-
-    <!-- PRODUTOS -->
-    <section id="produtos">
-        <div class="wrapper">
-
-            <div class="produtos-title">
-                <h1>NOSSOS PRODUTOS</h1>
-            </div>            
-
-            <!-- EMPACOTAMENTO -->
-            <div class="produtos-subtitle">
-                <h2>
-                    SISTEMA DE EMPACOTAMENTO
-                </h2>
-            </div>
-
-            <div class="container-produtos">
-                <button class="arrow-left control-empacota-slide" aria-label="Previous image" onclick= "mudarProduto('empacota-slide','left')">◀</button>
-                <div class="gallery-wrapper">
-                    <div class="gallery">
-    
-                        <div class="item empacota-slide current-item">
-                            <img src="imagens/embalagens/quadradas/Almofada.svg" alt="" >
-                            <p>ALMOFADA</p>
-                        </div>
-    
-                        <div class="item empacota-slide">
-                            <img src="imagens/embalagens/quadradas/Almofada.svg" alt="" >
-                            <p>ALMOFADA</p>
-                        </div>
-                        
-                        <div class="item empacota-slide">
-                            <img src="imagens/embalagens/quadradas/Almofada.svg" alt="" >
-                            <p>ALMOFADA</p>
-                        </div>
-    
-                        <div class="item empacota-slide">
-                            <img src="imagens/embalagens/quadradas/Almofada.svg" alt="" >
-                            <p>ALMOFADA</p>
-                        </div>
-    
-                        <div class="item empacota-slide">
-                            <img src="imagens/embalagens/quadradas/Almofada.svg" alt="" >
-                            <p>ALMOFADA</p>
-                        </div>
-    
-                        <div class="item empacota-slide">
-                            <img src="imagens/embalagens/quadradas/Almofada.svg" alt="" >
-                            <p>ALMOFADA</p>
-                        </div>
-    
-                        <div class="item empacota-slide">
-                            <img src="imagens/embalagens/quadradas/Almofada.svg" alt="" >
-                            <p>ALMOFADA</p>
-                        </div>
-    
-                        <div class="item empacota-slide">
-                            <img src="imagens/embalagens/quadradas/Almofada.svg" alt="" >
-                            <p>ALMOFADA</p>
-                        </div>
-    
-                        <div class="item empacota-slide">
-                            <img src="imagens/embalagens/quadradas/Almofada.svg" alt="" >
-                            <p>ALMOFADA</p>
-                        </div>
-    
-                        <div class="item empacota-slide">
-                            <img src="imagens/embalagens/quadradas/Almofada.svg" alt="" >
-                            <p>ALMOFADA</p>
-                        </div>
-                       
-                    </div>    
-                </div>
-    
-                <button class="arrow-right control-empacota-slide" aria-label="Next image" onclick= "mudarProduto('empacota-slide','right')">▶</button>                        
-            </div>
-    
-            <div class="produtos-text">
+            <div class="nossa-historia-content">
                 <p>
-                    Lörem ipsum rekoring tar i antin. Premerad apograf. Depred viralgranska antina. 
-                    Biotaren sverka och retropi ponera.
-                </p>
-            </div>
-            
-            <div class="btn-detalhes">
-                <a href="">
-                    + DETALHES
-                </a>
-            </div>
-           
-            <div class="produtos-line">
-                <hr>
-            </div>
-            <!-- EMBALAGENS LAMINADAS -->
-            <div class="produtos-subtitle embalagem">
-                <h2>
-                    EMBALAGENS LAMINADAS
-                </h2>
-            </div>
-
-            <div class="container-produtos">
-                <button class="arrow-left control-embalagem-slide" aria-label="Previous image" onclick= "mudarProduto('embalagem-slide','left')">◀</button>
-                <div class="gallery-wrapper">
-                    <div class="gallery">
-    
-                        <div class="item embalagem-slide current-item">
-                            <img src="imagens/embalagens/quadradas/Almofada.svg" alt="" >
-                            <p>ALMOFADA</p>
-                        </div>
-    
-                        <div class="item embalagem-slide">
-                            <img src="imagens/embalagens/quadradas/Almofada.svg" alt="" >
-                            <p>ALMOFADA</p>
-                        </div>
-                        
-                        <div class="item embalagem-slide">
-                            <img src="imagens/embalagens/quadradas/Almofada.svg" alt="" >
-                            <p>ALMOFADA</p>
-                        </div>
-    
-                        <div class="item embalagem-slide">
-                            <img src="imagens/embalagens/quadradas/Almofada.svg" alt="" >
-                            <p>ALMOFADA</p>
-                        </div>
-    
-                        <div class="item embalagem-slide">
-                            <img src="imagens/embalagens/quadradas/Almofada.svg" alt="" >
-                            <p>ALMOFADA</p>
-                        </div>
-    
-                        <div class="item embalagem-slide">
-                            <img src="imagens/embalagens/quadradas/Almofada.svg" alt="" >
-                            <p>ALMOFADA</p>
-                        </div>
-    
-                        <div class="item embalagem-slide">
-                            <img src="imagens/embalagens/quadradas/Almofada.svg" alt="" >
-                            <p>ALMOFADA</p>
-                        </div>
-    
-                        <div class="item embalagem-slide">
-                            <img src="imagens/embalagens/quadradas/Almofada.svg" alt="" >
-                            <p>ALMOFADA</p>
-                        </div>
-    
-                        <div class="item embalagem-slide">
-                            <img src="imagens/embalagens/quadradas/Almofada.svg" alt="" >
-                            <p>ALMOFADA</p>
-                        </div>
-    
-                        <div class="item embalagem-slide">
-                            <img src="imagens/embalagens/quadradas/Almofada.svg" alt="" >
-                            <p>ALMOFADA</p>
-                        </div>
-                       
-                    </div>    
-                </div>
-    
-                <button class="arrow-right control-embalagem-slide" aria-label="Next image" onclick= "mudarProduto('embalagem-slide','right')">▶</button>                        
-            </div>
-    
-            <div class="produtos-text">
-                <p>
-                    Lörem ipsum rekoring tar i antin. Premerad apograf. Depred viralgranska antina. 
-                    Biotaren sverka och retropi ponera.
+                    Informações curtas, Lörem ipsum gonera diarade, och trengar. Meganoska tirat medan sasuska ogisk 
                 </p>
             </div>
 
-            <div class="btn-detalhes">
-                <a href="">
-                    + DETALHES
+            <div class="btn-baixar-arquivo">
+                <a href="https://drive.google.com/file/d/10PtzBnLSSVXKYSVwWzNNWfbVPiGOZdzx/view" target="_blank">    
+                    <p>BAIXAR APRESENTAÇÃO</p>      
+                    <!-- <img src="imagens/icones/download-file.svg" alt="">       -->
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6.92315 14.7396C6.83382 14.7396 6.75342 14.7217 6.66409 14.686C6.41397 14.5877 6.25317 14.3376 6.25317 14.0696V8.70977C6.25317 8.34352 6.5569 8.03979 6.92315 8.03979C7.28941 8.03979 7.59313 8.34352 7.59313 8.70977V12.4527L8.23631 11.8095C8.49537 11.5505 8.92415 11.5505 9.18321 11.8095C9.44227 12.0686 9.44227 12.4974 9.18321 12.7564L7.3966 14.5431C7.27154 14.6681 7.09288 14.7396 6.92315 14.7396Z" fill="#A0101A"/>
+                        <path d="M6.92262 14.7393C6.75289 14.7393 6.58316 14.6768 6.44916 14.5428L4.66256 12.7562C4.4035 12.4971 4.4035 12.0683 4.66256 11.8093C4.92161 11.5502 5.3504 11.5502 5.60946 11.8093L7.39607 13.5959C7.65513 13.855 7.65513 14.2837 7.39607 14.5428C7.26207 14.6768 7.09234 14.7393 6.92262 14.7393Z" fill="#A0101A"/>
+                        <path d="M12.2829 19.206H6.92311C2.07247 19.206 0 17.1336 0 12.2829V6.92311C0 2.07247 2.07247 0 6.92311 0H11.3896C11.7559 0 12.0596 0.303724 12.0596 0.669978C12.0596 1.03623 11.7559 1.33996 11.3896 1.33996H6.92311C2.80498 1.33996 1.33996 2.80498 1.33996 6.92311V12.2829C1.33996 16.4011 2.80498 17.8661 6.92311 17.8661H12.2829C16.4011 17.8661 17.8661 16.4011 17.8661 12.2829V7.81641C17.8661 7.45016 18.1698 7.14644 18.5361 7.14644C18.9023 7.14644 19.206 7.45016 19.206 7.81641V12.2829C19.206 17.1336 17.1336 19.206 12.2829 19.206Z" fill="#A0101A"/>
+                        <path d="M18.536 8.4863H14.9628C11.9077 8.4863 10.7196 7.2982 10.7196 4.2431V0.66988C10.7196 0.401889 10.8804 0.151764 11.1305 0.0535003C11.3806 -0.0536962 11.6665 0.00883508 11.863 0.196429L19.0095 7.34286C19.1971 7.53046 19.2596 7.82526 19.1524 8.07538C19.0452 8.32551 18.804 8.4863 18.536 8.4863ZM12.0596 2.28676V4.2431C12.0596 6.54782 12.6581 7.14634 14.9628 7.14634H16.9191L12.0596 2.28676Z" fill="#A0101A"/>
+                        </svg>
+                                            
                 </a>
             </div>
-            
+
         </div>
     </section>
 
-
-    <!-- QUEM SOMOS -->
-    <section id="quem-somos">                
+    <section id="nosso-time">
         <div class="wrapper">
-            <div class="quem-somos-title">
-                <h1>QUEM SOMOS?</h1>
+            <div class="titulo">
+                <h2>NINGUÉM É FORTE SOZINHO.</h2>
             </div>
 
-            <div class="quem-somos-logo">
-                <img src="./imagens/logos/logo.svg" alt="">
+            <div class="subtitulo">
+                <h3>CONHEÇA O NOSSO TIME</h3>
             </div>
-            
-            <div class="quem-somos-content">
-                <p>
-                    Lörem ipsum krobenade anande pore vinosade. Bent ament. Kekrol pogihet gyvaliga. Keting miligen men hemilingar. Donat vittneslitteratur i däpedade. Du kan vara drabbad. 
-                </p>  
+
+            <div class="equipe">
+
+
+                <div class="equipe-membro">
+                    <div class="foto">
+                        <img src="../imagens/embalagens/quadradas/Almofada.svg" alt="">                    
+                    </div>
+
+                    <div class="nome">
+                        <p>Lörem ipsum</p>
+                    </div>
+
+                    <div class="cargo">
+                        <p>Cargo</p>
+                    </div>
+
+                </div>
+
+                <div class="equipe-membro">
+                    <div class="foto">
+                        <img src="../imagens/embalagens/quadradas/Almofada.svg" alt="">                    
+                    </div>
+
+                    <div class="nome">
+                        <p>Lörem ipsum</p>
+                    </div>
+
+                    <div class="cargo">
+                        <p>Cargo</p>
+                    </div>
+
+                </div>
+
+                <div class="equipe-membro">
+                    <div class="foto">
+                        <img src="../imagens/embalagens/quadradas/Almofada.svg" alt="">                    
+                    </div>
+
+                    <div class="nome">
+                        <p>Lörem ipsum</p>
+                    </div>
+
+                    <div class="cargo">
+                        <p>Cargo</p>
+                    </div>
+
+                </div>
+
             </div>
-    
-               
-            <div class="btn-detalhes">
-                <a href="">
-                    + DETALHES
-                </a>
-            </div>
+
         </div>
     </section>
 
@@ -363,10 +187,10 @@
         <i class="fa-brands fa-whatsapp"></i>
     </a>
 
-    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
-    <script src="script.js"></script>
+    <script src="../js/script.js"></script>
 </body>
+
 
 
 <!-- FOOTER -->
@@ -414,7 +238,7 @@
             <div class="redes-content">
                 
                 <div class="logo">
-                    <img src="imagens/logos/logo.svg" alt="logo-empresa">
+                    <img src="../imagens/logos/logo.svg" alt="logo-empresa">
                 </div>
         
                 <div class="redes-icones">
@@ -453,6 +277,7 @@
         </div>
     </section>
 </footer>
+
 
 
 </html>
