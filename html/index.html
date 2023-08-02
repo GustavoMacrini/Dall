@@ -23,24 +23,22 @@
     <nav class="navbar navbar-expand-lg navbar-light bg-light col-12 m-auto position-fixed" style="z-index: 999">
         
         <div class="container col-12 m-auto" id="navbar">
-            <div class="navbar-logo-botao">
-                <button onclick="navbarExpanded('open')" id="navbar-menu" class="navbar-toggler navbar-menu" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="toggler-icon top-bar">
-                        <img src="../imagens/navbar/menu.svg" alt="">
-                    </span>
-                </button>
-                <!-- LOGO -->
-                <a class="navbar-brand m-lg-1" href="#">
-                    <img src="../imagens/logos/logo.svg" alt="">
-                </a> 
+            <button onclick="navbarExpanded('open')" id="navbar-menu" class="navbar-toggler navbar-menu" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="toggler-icon top-bar">
+                    <img src="../imagens/navbar/menu.svg" alt="">
+                </span>
+            </button>
+            <!-- LOGO -->
+            <a class="navbar-brand m-lg-1" href="#">
+                <img src="../imagens/logos/logo.svg" alt="">
+            </a> 
+            
+            <button onclick="navbarExpanded('close')" id="navbar-close-menu" class="navbar-toggler navbar-close-menu" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="toggler-icon top-bar">
+                    <img src="../imagens/navbar/close-menu.svg" alt="">
+                </span>
+            </button>
                 
-                <button onclick="navbarExpanded('close')" id="navbar-close-menu" class="navbar-toggler navbar-close-menu" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="toggler-icon top-bar">
-                        <img src="../imagens/navbar/close-menu.svg" alt="">
-                    </span>
-                </button>
-                
-            </div>
                
             <!-- colocar dentro dessa div oq vai pra dentro do botão quando diminuir o tamanho -->
             <div class="collapse navbar-collapse" id="navbarSupportedContent">

@@ -87,8 +87,8 @@ body p{
 }
 
 .navbar-logo-botao{
-    display: flex;
-    gap:5rem;
+    /* display: flex; */
+    /* gap:5rem; */
 }
 
 .nav-link{
