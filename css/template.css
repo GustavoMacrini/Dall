@@ -86,11 +86,6 @@ body p{
     visibility: hidden;
 }
 
-.navbar-logo-botao{
-    /* display: flex; */
-    /* gap:5rem; */
-}
-
 .nav-link{
     font-weight: 700;
     font-size: 16px;
