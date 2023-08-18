@@ -86,3 +86,9 @@ function produtosDetalhesShow(card){
     // document.getElementById('group-card-maquina').classList.toggle('group-hidden');
     document.querySelector('#group-card-' + card).classList.toggle('group-hidden');
 }
+
+window.addEventListener('scroll', onScroll)
+onScroll()
+function onScroll(){
+    console.log(scrollY);
+}
