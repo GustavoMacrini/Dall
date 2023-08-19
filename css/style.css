@@ -137,8 +137,6 @@
     right: auto;
     bottom: 0;
     font-size: 1.25rem;
-    /* line-height: 15.5rem; */
-    /* width: 2.5rem; */
     text-align: center;
     color: white;    
     cursor: pointer;
@@ -160,8 +158,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* width: 45%;
-    height: 45%; */
     flex-shrink: 0;    
 }
 
@@ -191,7 +187,6 @@
 }
 
 #quem-somos .wrapper{
-    /* padding-top: 3.125rem; */
     padding-bottom: 1.75rem;
     background-color: #fff;
     border-top-left-radius: 10px;
