@@ -42,7 +42,7 @@
     background-size: 100%;
 }
 
-#nossa-historia .info-empresa-titulo h2{
+#nossa-historia .info-empresa-titulo h1{
     font-size: 16px;
     margin-bottom: 1.5rem;
     font-weight: 700;
@@ -67,12 +67,6 @@
 #nossa-historia .info-empresa p{
     font-size: 12px;
     font-weight: 300;
-}
-
-#nossa-historia .info-empresa .info-empresa-content{
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
 }
 
 /* ----------------------------- PRODUTOS - SLIDE*/
