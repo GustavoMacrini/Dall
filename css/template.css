@@ -1,4 +1,10 @@
 /* ----------------------------- Geral -----------------------------------------*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
 :root{
     --primary-color: rgba(160, 16, 26, 1);
     --primary-color-light: rgba(160, 16, 26, 0.85);
@@ -187,7 +193,7 @@ body p{
 @media (min-width: 992px){
     .wrapper{
         /* width: max(80rem);    */
-        width: max(96rem);
+        /* width: max(96rem); */
     }
 
     .btn-detalhes a{

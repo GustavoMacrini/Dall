@@ -238,10 +238,6 @@
         background-position: relative;
         background-repeat: no-repeat; 
         background-position: top right; 
-        background-size: 100%;
-        
-        /* height: 3005.5px; */
-
     }
 
     #nossa-historia .wrapper{
@@ -305,7 +301,7 @@
     /* slider */
 
     #produtos .gallery-wrapper{
-        margin-inline: 5rem;
+        /* margin-inline: 5rem; */
     }
 
     #produtos .gallery{

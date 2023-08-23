@@ -87,8 +87,8 @@ function produtosDetalhesShow(card){
     document.querySelector('#group-card-' + card).classList.toggle('group-hidden');
 }
 
-window.addEventListener('scroll', onScroll)
-onScroll()
-function onScroll(){
-    console.log(scrollY);
-}
+// window.addEventListener('scroll', onScroll)
+// onScroll()
+// function onScroll(){
+//     console.log(scrollY);
+// }
