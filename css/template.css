@@ -153,6 +153,29 @@ body p{
     gap: 2rem;
 }
 
+#redes .redes-icones svg{
+    cursor: pointer;
+}
+
+
+
+
+/* TENTATIVA DE FAZER UM HOVER, MAS O ICONE DO LINKEDIN N TA LEGAL */
+#redes .redes-icones a svg{
+    /* stroke: #17191C; */
+}
+
+/* #redes .redes-icones a svg:hover{
+    stroke: #888;
+} */
+
+/* #redes .redes-icones a svg rect{
+    stroke: none;
+} */
+
+
+
+
 /* COPYRIGHT */
 #copyright .copyright-dall{
     background-color: var(--primary-color-light-2);

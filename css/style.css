@@ -35,11 +35,12 @@
     background-color: var(--primary-color-light-3);
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
-    background-image: url(./imagens/background/circle.svg);
+    background-image: url(../imagens/background/circle.svg);
     background-position: relative;
-    background-position-x: 30px;
+    background-position-x: 0;
     background-repeat:no-repeat;
     background-size: 100%;
+    background-position-y: -40px;
 }
 
 #nossa-historia .info-empresa-titulo h1{
@@ -234,10 +235,10 @@
     /* --------------------- SAVINGS */
     #nossa-historia{
         background-color: var(--primary-color-light-3);
-        background-image: url(./imagens/background/circle-desktop.svg);
+        background-image: url(../imagens/background/circle-desktop.svg);
         background-position: relative;
         background-repeat: no-repeat; 
-        background-position: top right; 
+        background-position: top right;
     }
 
     #nossa-historia .wrapper{
