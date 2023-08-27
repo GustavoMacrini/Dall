@@ -107,7 +107,7 @@ body p{
     background-color: var(--primary-color);
 }
 
-.btn-baixar-arquivo:hover p,
+.btn-baixar-arquivo a:hover p,
 .btn-baixar-arquivo:hover svg path{
     color: white;
     cursor:pointer;
