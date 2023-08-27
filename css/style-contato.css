@@ -47,10 +47,10 @@
 /* ----------------------------- CONTATO */
 #contato{
     padding-top: 4.5rem;
+    background-color: white;
 }
 
 #contato .wrapper{
-    
 }
 
 #contato .contato-title h2{
@@ -102,10 +102,10 @@
 /* ----------------------------- TIME */
 #video{
     background-color: white;
+    background-color: var(--primary-color-light-3);
 }
 
 #video .wrapper{
-    background-color: var(--primary-color-light-3);
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
     padding-top: 5rem;
